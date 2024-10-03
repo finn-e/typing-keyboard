@@ -139,9 +139,59 @@
             key-positions = <32 31>;
         };
 
-        combo_comma {
+        combo_backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <32 30>;
+        };
+
+        combo_colon {
+            bindings = <&kp COLON>;
+            key-positions = <32 29>;
+        };
+
+        combo_underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <31 30>;
+        };
+
+        combo_hr_exclam {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <31 29>;
+        };
+
+        combo_hr_sqt {
+            bindings = <&kp APOSTROPHE>;
+            key-positions = <29 30>;
+        };
+
+        combo_hr_comma {
             bindings = <&kp COMMA>;
-            key-positions = <42 41>;
+            key-positions = <41 42>;
+        };
+
+        combo_slash {
+            bindings = <&kp SLASH>;
+            key-positions = <41 43>;
+        };
+
+        combo_hr_semicolon {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <41 44>;
+        };
+
+        combo_hr_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <42 43>;
+        };
+
+        combo_hr_question_mark {
+            bindings = <&kp QUESTION>;
+            key-positions = <42 44>;
+        };
+
+        combo_hr_double_quotes {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <43 44>;
         };
     };
 
