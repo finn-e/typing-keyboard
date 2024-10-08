@@ -38,6 +38,11 @@
             bindings = <&bl BL_TOG>;
             key-positions = <0 14>;
         };
+
+        combo_test_2 {
+            bindings = <&bl BL_TOG>;
+            key-positions = <14 28>;
+        };
     };
 
     keymap {
