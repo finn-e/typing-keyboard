@@ -70,29 +70,78 @@
 		
 		        combo_vert_UH_N6 {
             bindings = <&kp N6>;
-            key-positions = <20 34>;
+            key-positions = <22 34>;
         };
 		
 		        combo_vert_UH_N7 {
             bindings = <&kp N7>;
-            key-positions = <21 35>;
+            key-positions = <21 37>;
         };
 		
 		        combo_vert_UH_N8 {
             bindings = <&kp N8>;
-            key-positions = <22 36>;
+            key-positions = <22 38>;
         };
 		
 		        combo_vert_UH_N9 {
             bindings = <&kp N9>;
-            key-positions = <23 29>;
+            key-positions = <23 39>;
         };
 		
 		        combo_vert_UH_N0 {
             bindings = <&kp N0>;
-            key-positions = <24 29>;
+            key-positions = <24 40>;
         };
 		
+		        combo_vert_HL_exclamation {
+            bindings = <&kp N1>;
+            key-positions = <29 43>;
+        };
+		
+		        combo_vert_HL_at {
+            bindings = <&kp N2>;
+            key-positions = <30 44>;
+        };
+		
+		        combo_vert_HL_hash {
+            bindings = <&kp N3>;
+            key-positions = <31 45>;
+        };
+		
+		        combo_vert_HL_dollar {
+            bindings = <&kp N4>;
+            key-positions = <32 46>;
+        };
+		
+		        combo_vert_HL_percent {
+            bindings = <&kp N5>;
+            key-positions = <33 47>;
+        };
+		
+		        combo_vert_HL_N6 {
+            bindings = <&kp N6>;
+            key-positions = <34 48>;
+        };
+		
+		        combo_vert_HL_N7 {
+            bindings = <&kp N7>;
+            key-positions = <37 54>;
+        };
+		
+		        combo_vert_HL_N8 {
+            bindings = <&kp N8>;
+            key-positions = <38 55>;
+        };
+		
+		        combo_vert_HL_N9 {
+            bindings = <&kp N9>;
+            key-positions = <39 56>;
+        };
+		
+		        combo_vert_HL_N0 {
+            bindings = <&kp N0>;
+            key-positions = <40 57>;
+        };
     };
 
     keymap {
