@@ -28,21 +28,71 @@
             quick_tap_ms = <175>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+/* Another possibility:
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+*/
         };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        combo_test_1 {
-            bindings = <&bl BL_TOG>;
-            key-positions = <0 14>;
+        combo_vert_UH_N1 {
+            bindings = <&kp N1>;
+            key-positions = <15 29>;
         };
-
-        combo_test_2 {
-            bindings = <&bl BL_TOG>;
-            key-positions = <14 28>;
+		
+		        combo_vert_UH_N2 {
+            bindings = <&kp N2>;
+            key-positions = <16 30>;
         };
+		
+		        combo_vert_UH_N3 {
+            bindings = <&kp N3>;
+            key-positions = <17 31>;
+        };
+		
+		        combo_vert_UH_N4 {
+            bindings = <&kp N4>;
+            key-positions = <18 32>;
+        };
+		
+		        combo_vert_UH_N5 {
+            bindings = <&kp N5>;
+            key-positions = <19 33>;
+        };
+		
+		        combo_vert_UH_N6 {
+            bindings = <&kp N6>;
+            key-positions = <20 34>;
+        };
+		
+		        combo_vert_UH_N7 {
+            bindings = <&kp N7>;
+            key-positions = <21 35>;
+        };
+		
+		        combo_vert_UH_N8 {
+            bindings = <&kp N8>;
+            key-positions = <22 36>;
+        };
+		
+		        combo_vert_UH_N9 {
+            bindings = <&kp N9>;
+            key-positions = <23 29>;
+        };
+		
+		        combo_vert_UH_N0 {
+            bindings = <&kp N0>;
+            key-positions = <24 29>;
+        };
+		
     };
 
     keymap {
