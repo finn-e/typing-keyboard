@@ -5,7 +5,3 @@ config BOARD_ENABLE_DCDC
     select SOC_DCDC_NRF52X
     default y
     depends on BOARD_ADV360_LEFT || BOARD_ADV360_RIGHT
-
-config CONFIG_ZMK_COMBO_MAX_COMBOS_PER_KEY 
-    int "Max combos per key"
-    default 8
