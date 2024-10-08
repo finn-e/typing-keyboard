@@ -28,7 +28,8 @@
             quick_tap_ms = <175>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-/* Another possibility:
+
+            /* Another possibility:
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
@@ -47,100 +48,100 @@
             bindings = <&kp N1>;
             key-positions = <15 29>;
         };
-		
-		        combo_vert_UH_N2 {
+
+        combo_vert_UH_N2 {
             bindings = <&kp N2>;
             key-positions = <16 30>;
         };
-		
-		        combo_vert_UH_N3 {
+
+        combo_vert_UH_N3 {
             bindings = <&kp N3>;
             key-positions = <17 31>;
         };
-		
-		        combo_vert_UH_N4 {
+
+        combo_vert_UH_N4 {
             bindings = <&kp N4>;
             key-positions = <18 32>;
         };
-		
-		        combo_vert_UH_N5 {
+
+        combo_vert_UH_N5 {
             bindings = <&kp N5>;
             key-positions = <19 33>;
         };
-		
-		        combo_vert_UH_N6 {
+
+        combo_vert_UH_N6 {
             bindings = <&kp N6>;
-            key-positions = <22 36>;
+            key-positions = <22 40>;
         };
-		
-		        combo_vert_UH_N7 {
+
+        combo_vert_UH_N7 {
             bindings = <&kp N7>;
-            key-positions = <21 37>;
+            key-positions = <23 41>;
         };
-		
-		        combo_vert_UH_N8 {
+
+        combo_vert_UH_N8 {
             bindings = <&kp N8>;
-            key-positions = <22 38>;
+            key-positions = <24 42>;
         };
-		
-		        combo_vert_UH_N9 {
+
+        combo_vert_UH_N9 {
             bindings = <&kp N9>;
-            key-positions = <23 39>;
+            key-positions = <25 43>;
         };
-		
-		        combo_vert_UH_N0 {
+
+        combo_vert_UH_N0 {
             bindings = <&kp N0>;
-            key-positions = <24 40>;
+            key-positions = <26 44>;
         };
-		
-		        combo_vert_HL_exclamation {
-            bindings = <&kp N1>;
-            key-positions = <29 43>;
+
+        combo_vert_HL_exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <29 47>;
         };
-		
-		        combo_vert_HL_at {
-            bindings = <&kp N2>;
-            key-positions = <30 44>;
+
+        combo_vert_HL_at {
+            bindings = <&kp AT>;
+            key-positions = <30 48>;
         };
-		
-		        combo_vert_HL_hash {
-            bindings = <&kp N3>;
-            key-positions = <31 45>;
+
+        combo_vert_HL_hash {
+            bindings = <&kp HASH>;
+            key-positions = <31 49>;
         };
-		
-		        combo_vert_HL_dollar {
-            bindings = <&kp N4>;
-            key-positions = <32 46>;
+
+        combo_vert_HL_dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <32 50>;
         };
-		
-		        combo_vert_HL_percent {
-            bindings = <&kp N5>;
-            key-positions = <33 47>;
+
+        combo_vert_HL_percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <33 51>;
         };
-		
-		        combo_vert_HL_caret {
-            bindings = <&kp N6>;
-            key-positions = <34 48>;
+
+        combo_vert_HL_caret {
+            bindings = <&kp CARET>;
+            key-positions = <40 54>;
         };
-		
-		        combo_vert_HL_ampersand {
-            bindings = <&kp N7>;
-            key-positions = <37 54>;
+
+        combo_vert_HL_ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <55 41>;
         };
-		
-		        combo_vert_HL_asterisk {
-            bindings = <&kp N8>;
-            key-positions = <38 55>;
+
+        combo_vert_HL_asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <56 42>;
         };
-		
-		        combo_vert_HL_lparen {
-            bindings = <&kp N9>;
-            key-positions = <39 56>;
+
+        combo_vert_HL_lparen {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <57 43>;
         };
-		
-		        combo_vert_HL_rparen {
-            bindings = <&kp N0>;
-            key-positions = <40 57>;
+
+        combo_vert_HL_rparen {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <44 58>;
         };
     };
 
