@@ -363,11 +363,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1          &kp N2           &kp N3              &kp N4            &kp N5     &tog 2                                                       &mo 4          &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &kp MINUS
-&kp TAB    &kp COMMA       &kp Q            &kp U               &kp DOT           &kp GRAVE  &none                                                        &none          &kp K   &kp G              &kp H                &kp C            &kp W            &kp BSLH
-&kp ESC    &hm LEFT_GUI A  &hm LEFT_ALT O   &hm LEFT_CONTROL E  &hm LEFT_SHIFT I  &kp P      &none      &kp LCTRL  &kp LALT       &kp LGUI    &kp RCTRL   &tog 1         &kp M   &hm RIGHT_SHIFT T  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &kp BACKSPACE
-&kp LSHFT  &kp SLASH       &hm RIGHT_ALT X  &kp Z               &kp Y             &kp J                            &kp GRAVE      &kp T                                  &kp B   &kp D              &kp L                &hm RIGHT_ALT F  &kp V            &kp RSHFT
-&mo 3      &kp HOME        &kp END          &kp LEFT            &kp RIGHT                    &kp SPACE  &kp TAB    &kp ESC        &kp RETURN  &kp DELETE  &kp BACKSPACE          &kp UP             &kp DOWN             &kp PG_UP        &kp PG_DN        &mo 3
+&kp EQUAL  &kp N1          &kp N2           &kp N3              &kp N4            &kp N5     &tog 2                                                         &mo 4          &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &kp MINUS
+&kp TAB    &kp COMMA       &kp Q            &kp U               &kp DOT           &kp GRAVE  &none                                                          &none          &kp K   &kp G              &kp H                &kp C            &kp W            &kp BSLH
+&kp ESC    &hm LEFT_GUI A  &hm LEFT_ALT O   &hm LEFT_CONTROL E  &hm LEFT_SHIFT I  &kp P      &none        &kp LCTRL  &kp LALT       &kp LGUI    &kp RCTRL   &tog 1         &kp M   &hm RIGHT_SHIFT T  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &kp BACKSPACE
+&kp LSHFT  &kp SLASH       &hm RIGHT_ALT X  &kp Z               &kp Y             &kp J                              &kp GRAVE      &kp T                                  &kp B   &kp D              &kp L                &hm RIGHT_ALT F  &kp V            &kp RSHFT
+&mo 3      &kp HOME        &kp END          &kp LEFT            &kp RIGHT                    &lt 2 SPACE  &kp TAB    &kp ESC        &kp RETURN  &kp DELETE  &kp BACKSPACE          &kp UP             &kp DOWN             &kp PG_UP        &kp PG_DN        &mo 3
             >;
         };
 
