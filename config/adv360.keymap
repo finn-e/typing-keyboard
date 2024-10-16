@@ -348,12 +348,12 @@
 
         combo_all_left_esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <29 31 30 32>;
+            key-positions = <31 30 32>;
         };
 
         combo_all_rite {
             bindings = <&kp BACKSPACE>;
-            key-positions = <41 42 43 44>;
+            key-positions = <41 42 43>;
         };
     };
 
