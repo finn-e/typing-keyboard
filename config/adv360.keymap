@@ -335,14 +335,14 @@
             bindings = <&kp UNDER>;
         };
 
-        combo_capsword {
+        combo_thumbs_thorn {
             timeout-ms = <50>;
             key-positions = <69 70>;
-            bindings = <&caps_word>;
+            bindings = <&thorn>;
         };
 
-        combo_thumbs_right_repeat {
-            bindings = <&key_repeat>;
+        combo_thumbs_right_inner {
+            bindings = <&none>;
             key-positions = <69 68>;
         };
 
@@ -366,10 +366,10 @@
             label = "THORN";
         };
 
-        new_macro: new_macro {
+        double0: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp GRAVE>;
+            bindings = <&macro_press>, <&kp N0 &kp N0>;
 
             label = "NEW_MACRO";
         };
@@ -380,11 +380,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1          &kp N2           &kp N3              &kp N4            &kp N5     &tog 3                                                           &mo 5   &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &kp MINUS
-&kp TAB    &kp COMMA       &lt 3 Q          &kp U               &kp DOT           &kp GRAVE  &kp ESCAPE                                                       &tog 1  &kp K   &kp G              &kp H                &kp C            &kp W            &kp BSLH
-&kp ESC    &hm LEFT_GUI A  &hm LEFT_ALT O   &hm LEFT_CONTROL E  &hm LEFT_SHIFT I  &kp P      &kp BACKSPACE  &kp LCTRL  &kp LALT          &kp LGUI  &kp RCTRL  &tog 2  &kp M   &hm RIGHT_SHIFT T  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &kp BACKSPACE
-&kp LSHFT  &kp SLASH       &hm RIGHT_ALT X  &kp Z               &kp Y             &kp J                                &kp GRAVE         &thorn                       &kp B   &kp D              &kp L                &hm RIGHT_ALT F  &kp V            &kp RSHFT
-&mo 4      &kp HOME        &kp END          &kp LEFT            &kp RIGHT                    &lt 3 SPACE    &lt 6 TAB  &lt 7 RETURN      &kp RET   &kp T      &kp H           &kp UP             &kp DOWN             &kp PG_UP        &kp PG_DN        &mo 4
+&kp EQUAL  &kp N1          &kp N2           &kp N3              &kp N4            &kp N5     &tog 3                                                                                  &mo 5   &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &kp MINUS
+&kp TAB    &caps_word      &kp Q            &lt 4 U             &key_repeat       &kp TILDE  &kp ESCAPE                                                                              &tog 1  &kp K   &kp G              &lt 4 H              &kp C            &kp W            &kp BSLH
+&kp ESC    &hm LEFT_GUI A  &hm LEFT_ALT O   &hm LEFT_CONTROL E  &hm LEFT_SHIFT I  &kp P      &kp BACKSPACE  &kp LCTRL  &kp LALT          &mt LGUI ESCAPE  &mt RIGHT_CONTROL K_CMENU  &tog 2  &kp M   &hm RIGHT_SHIFT T  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &kp BACKSPACE
+&kp LSHFT  &key_repeat     &hm RIGHT_ALT X  &kp Z               &lt 3 Y           &kp J                                &kp GRAVE         &thorn                                              &kp B   &kp D              &kp L                &hm RIGHT_ALT F  &kp V            &kp RSHFT
+&mo 4      &kp HOME        &kp END          &kp LEFT            &kp RIGHT                    &lt 3 SPACE    &lt 7 TAB  &lt 7 RETURN      &kp RET          &kp H                      &kp T           &kp UP             &kp DOWN             &kp PG_UP        &kp PG_DN        &mo 4
             >;
         };
 
@@ -410,11 +410,11 @@
 
         layer_keypad {
             bindings = <
-&trans  &trans     &trans    &trans    &trans     &trans  &trans                                                   &trans        &trans  &kp KP_NUM    &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans
-&trans  &trans     &trans    &trans    &trans     &trans  &none                                                    &none         &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp KP_MINUS     &trans
-&trans  &trans     &trans    &trans    &trans     &trans  &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none         &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp KP_PLUS      &trans
-&trans  &trans     &trans    &trans    &trans     &trans                       &kp HOME      &kp PG_UP                           &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp KP_ENTER     &trans
-&mo 4   &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp NUMBER_0          &kp UP        &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 4
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                       &trans    &trans  &kp KP_NUM    &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                        &none     &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp KP_MINUS     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans   &trans  &none     &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp KP_PLUS      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                     &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp KP_ENTER     &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &kp DOT  &kp N0  &double0          &kp DOT       &kp N0        &double0       &trans           &trans
             >;
         };
 
@@ -450,11 +450,11 @@
 
         layer_vimnav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans     &trans     &trans       &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp HOME   &kp PG_DN  &kp PAGE_UP  &kp END    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LEFT   &kp UP     &kp DOWN     &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)    &kp LC(V)  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans     &trans     &trans       &trans     &trans
+&trans  &trans     &trans     &trans     &trans     &trans  &trans                                      &trans  &trans  &trans     &trans     &trans       &trans     &trans
+&trans  &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans                                      &trans  &trans  &kp HOME   &kp PG_DN  &kp PAGE_UP  &kp END    &trans
+&trans  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LEFT   &kp UP     &kp DOWN     &kp RIGHT  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans                  &trans      &trans                  &trans  &kp LC(V)  &kp LC(C)  &kp LC(X)    &kp LC(Z)  &trans
+&trans  &trans     &trans     &trans     &trans             &trans  &trans  &trans      &trans  &trans  &trans          &trans     &trans     &trans       &trans     &trans
             >;
         };
     };
