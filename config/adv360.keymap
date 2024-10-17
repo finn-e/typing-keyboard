@@ -373,6 +373,14 @@
 
             label = "NEW_MACRO";
         };
+
+        ht: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp T>, <&macro_press>;
+
+            label = "NEW_MACRO";
+        };
     };
 
     keymap {
@@ -383,8 +391,8 @@
 &kp EQUAL  &kp N1          &kp N2           &kp N3              &kp N4            &kp N5     &tog 3                                                                                  &mo 0   &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &kp MINUS
 &kp TAB    &kp CAPSLOCK    &kp Q            &lt 4 U             &key_repeat       &kp TILDE  &kp ESCAPE                                                                              &tog 1  &kp K   &kp G              &lt 4 H              &kp C            &kp W            &kp BSLH
 &kp ESC    &hm LEFT_GUI A  &hm LEFT_ALT O   &hm LEFT_CONTROL E  &hm LEFT_SHIFT I  &kp P      &kp BACKSPACE  &kp LCTRL  &kp LALT          &mt LGUI ESCAPE  &mt RIGHT_CONTROL K_CMENU  &tog 2  &kp M   &hm RIGHT_SHIFT T  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &kp BACKSPACE
-&kp LSHFT  &caps_word      &hm RIGHT_ALT X  &kp Z               &lt 3 Y           &kp J                                &kp GRAVE         &thorn                                              &kp B   &kp D              &kp L                &hm RIGHT_ALT F  &kp V            &kp RSHFT
-&mo 3      &kp HOME        &kp END          &kp LEFT            &kp RIGHT                    &lt 3 SPACE    &lt 6 TAB  &lt 5 RETURN      &kp RET          &kp H                      &kp T           &kp UP             &kp DOWN             &kp PG_UP        &kp PG_DN        &mo 4
+&kp LSHFT  &caps_word      &hm RIGHT_ALT X  &kp Z               &lt 3 Y           &kp J                                &kp GRAVE         &ht                                                 &kp B   &kp D              &kp L                &hm RIGHT_ALT F  &kp V            &kp RSHFT
+&mo 3      &kp HOME        &kp END          &kp LEFT            &kp RIGHT                    &lt 3 SPACE    &lt 6 TAB  &lt 5 RETURN      &kp RET          &kp T                      &kp H           &kp UP             &kp DOWN             &kp PG_UP        &kp PG_DN        &mo 4
             >;
         };
 
