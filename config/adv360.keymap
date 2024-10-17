@@ -361,25 +361,23 @@
         thorn: thorn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp H>, <&macro_press>;
+            bindings = <&macro_press>, <&kp T &kp H>;
 
             label = "THORN";
         };
 
-        double0: new_macro {
+        double0: double0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp N0 &kp N0>;
-
-            label = "NEW_MACRO";
+            bindings = <&kp N0 &kp N0>;
+            label = "DOUBLE0";
         };
 
-        ht: new_macro {
+        ht: ht {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp H &kp T>, <&macro_press>;
-
-            label = "NEW_MACRO";
+            bindings = <&kp H &kp T>;
+            label = "HT";
         };
     };
 
