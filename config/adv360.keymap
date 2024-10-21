@@ -386,11 +386,11 @@
 
         default_layer {
             bindings = <
-&lt 6 ESCAPE  &kp N1          &kp N2           &kp N3              &kp N4            &kp N5     &tog 3                                                                                  &mo 0   &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &lt 5 BACKSPACE
-&kp TAB       &kp CAPSLOCK    &kp Q            &kp U               &key_repeat       &kp TILDE  &kp ESCAPE                                                                              &tog 1  &kp K   &kp G              &kp H                &kp C            &kp W            &kp BSLH
-&kp ESC       &hm LEFT_GUI A  &hm LEFT_ALT O   &hm LEFT_CONTROL E  &hm LEFT_SHIFT I  &kp P      &kp BACKSPACE  &kp LCTRL  &kp LALT          &mt LGUI ESCAPE  &mt RIGHT_CONTROL K_CMENU  &tog 2  &kp M   &hm RIGHT_SHIFT T  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &kp BACKSPACE
-&kp LSHFT     &caps_word      &hm RIGHT_ALT X  &kp Z               &lt 3 Y           &kp J                                &kp GRAVE         &ht                                                 &kp B   &kp D              &kp L                &hm RIGHT_ALT F  &kp V            &kp RSHFT
-&mo 3         &kp HOME        &kp END          &kp LEFT            &kp RIGHT                    &lt 3 SPACE    &lt 6 TAB  &lt 5 RETURN      &kp RET          &kp T                      &kp H           &kp UP             &kp DOWN             &kp PG_UP        &kp PG_DN        &mo 4
+&lt 5 ESCAPE  &kp N1          &kp N2           &kp N3              &kp N4            &kp N5     &tog 3                                                                               &mo 0    &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &lt 5 BACKSPACE
+&kp TAB       &caps_word      &kp Q            &lt 4 U             &key_repeat       &kp TILDE  &kp ESCAPE                                                                           &tog 1   &kp K   &kp G              &lt 4 H              &kp C            &kp W            &kp BSLH
+&caps_word    &hm LEFT_GUI A  &hm LEFT_ALT O   &hm LEFT_CONTROL E  &hm LEFT_SHIFT I  &kp P      &kp BACKSPACE  &kp LCTRL  &kp LALT                 &kp LEFT_META  &kp RIGHT_CONTROL  &tog 2   &kp M   &hm RIGHT_SHIFT T  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &kp W
+&kp LSHFT     &kp V           &hm RIGHT_ALT X  &kp Z               &lt 3 Y           &kp J                                &lt 4 K_APPLICATION      &ht                                        &kp B   &kp D              &kp L                &hm RIGHT_ALT F  &kp UP_ARROW     &kp RSHFT
+&tog 3        &kp HOME        &kp PAGE_DOWN    &kp PAGE_UP         &kp END                      &lt 3 SPACE    &lt 5 TAB  &kp RETURN               &kp RET        &lt 5 T            &lt 4 H          &tog 4             &sl 4                &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
             >;
         };
 
@@ -431,16 +431,6 @@
 &trans  &kp F21  &kp F22  &kp F23  &kp F24  &trans   &sys_reset   &trans  &trans      &trans  &trans  &sys_reset   &kp C_MUTE    &kp C_VOL_UP  &bl BL_INC  &kp PRINTSCREEN  &bl BL_TOG      &trans
 &trans  &trans   &trans   &trans   &trans   &trans                        &trans      &trans                       &kp CAPSLOCK  &kp C_VOL_DN  &bl BL_DEC  &kp SCROLLLOCK   &kp KP_NUMLOCK  &trans
 &trans  &trans   &trans   &trans   &trans            &trans       &trans  &trans      &trans  &trans  &trans                     &trans        &trans      &trans           &trans          &trans
-            >;
-        };
-
-        layer_Tnav {
-            bindings = <
-&trans  &trans         &trans     &trans     &trans     &trans                 &trans                                      &trans  &trans                 &trans    &trans    &trans     &trans     &trans
-&trans  &kp PG_UP      &kp HOME   &kp UP     &kp END    &kp LS(LA(LC(LG(A))))  &trans                                      &trans  &kp LS(LA(LC(LG(D))))  &kp HOME  &kp UP    &kp END    &kp PG_UP  &trans
-&trans  &kp PAGE_DOWN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp LS(LA(LC(LG(B))))  &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(LA(LG(LC(E))))  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
-&trans  &kp LC(Z)      &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(LG(LA(LS(C))))                  &trans      &trans                  &kp LG(LC(LA(LS(F))))  &trans    &trans    &trans     &trans     &trans
-&trans  &trans         &trans     &trans     &trans                            &trans  &trans  &trans      &trans  &trans  &trans                         &trans    &trans    &trans     &trans     &trans
             >;
         };
 
