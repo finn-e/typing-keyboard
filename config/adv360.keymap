@@ -386,11 +386,11 @@
 
         default_layer {
             bindings = <
-&lt 5 ESCAPE  &kp N1          &kp N2           &kp N3              &kp N4            &kp N5     &tog 3                                                                               &mo 0    &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &lt 5 BACKSPACE
-&kp TAB       &caps_word      &kp Q            &lt 4 U             &key_repeat       &kp TILDE  &kp ESCAPE                                                                           &tog 1   &kp K   &kp G              &lt 4 H              &kp C            &kp W            &kp BSLH
-&caps_word    &hm LEFT_GUI A  &hm LEFT_ALT O   &hm LEFT_CONTROL E  &hm LEFT_SHIFT I  &kp P      &kp BACKSPACE  &kp LCTRL  &kp LALT                 &kp LEFT_META  &kp RIGHT_CONTROL  &tog 2   &kp M   &hm RIGHT_SHIFT T  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &kp W
-&kp LSHFT     &kp V           &hm RIGHT_ALT X  &kp Z               &lt 3 Y           &kp J                                &lt 4 K_APPLICATION      &ht                                        &kp B   &kp D              &kp L                &hm RIGHT_ALT F  &kp UP_ARROW     &kp RSHFT
-&tog 3        &kp HOME        &kp PAGE_DOWN    &kp PAGE_UP         &kp END                      &lt 3 SPACE    &lt 5 TAB  &kp RETURN               &kp RET        &lt 5 T            &lt 4 H          &tog 4             &sl 4                &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
+&lt 5 ESCAPE  &kp N1          &kp N2           &kp N3              &kp N4            &kp N5      &tog 3                                                                               &mo 0    &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &lt 5 BACKSPACE
+&kp TAB       &caps_word      &kp Q            &lt 4 U             &kp Y             &kp TILDE   &kp DELETE                                                                           &tog 1   &kp J   &kp C              &lt 4 L              &kp F            &kp B            &kp BSLH
+&caps_word    &hm LEFT_GUI A  &hm LEFT_ALT O   &hm LEFT_CONTROL E  &hm LEFT_SHIFT I  &kp RETURN  &kp BACKSPACE  &kp LCTRL  &kp LALT                 &kp LEFT_META  &kp RIGHT_CONTROL  &tog 2   &kp W   &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &kp W
+&kp LSHFT     &kp K           &hm RIGHT_ALT X  &key_repeat         &lt 3 P           &kp J                                 &lt 4 K_APPLICATION      &ht                                        &kp Z   &kp G              &kp M                &hm RIGHT_ALT V  &kp UP_ARROW     &kp RSHFT
+&tog 3        &kp HOME        &kp PAGE_DOWN    &kp PAGE_UP         &kp END                       &lt 3 SPACE    &lt 5 TAB  &kp RETURN               &kp RET        &lt 5 T            &lt 4 H          &tog 4             &sl 4                &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
             >;
         };
 
