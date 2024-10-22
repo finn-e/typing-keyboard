@@ -457,9 +457,9 @@
         layer_vimnav {
             bindings = <
 &trans  &trans     &trans     &trans     &trans     &trans        &trans                                                           &trans       &trans        &trans     &trans     &trans     &trans     &trans
-&trans  &kp END    &kp PG_DN  &kp PG_UP  &kp HOME   &bt BT_SEL 0  &bootloader                                                      &bootloader  &bt BT_SEL 3  &kp END    &kp PG_UP  &kp PG_DN  &kp HOME   &trans
-&trans  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &bt BT_SEL 1  &sys_reset   &trans         &trans          &trans   &trans      &sys_reset   &bt BT_SEL 4  &kp LEFT   &kp UP     &kp DOWN   &kp RIGHT  &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &bt BT_SEL 2                              &trans          &trans                            &bt BT_CLR    &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)  &trans
+&trans  &kp END    &kp PG_DN  &kp PG_UP  &kp HOME   &bt BT_SEL 0  &bootloader                                                      &bootloader  &bt BT_SEL 1  &kp END    &kp PG_UP  &kp PG_DN  &kp HOME   &trans
+&trans  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &bt BT_SEL 2  &sys_reset   &trans         &trans          &trans   &trans      &sys_reset   &bt BT_SEL 3  &kp LEFT   &kp UP     &kp DOWN   &kp RIGHT  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &bt BT_CLR                                &trans          &trans                            &bt BT_CLR    &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)  &trans
 &trans  &trans     &trans     &trans     &trans                   &kp ESCAPE   &kp BACKSPACE  &kp DELETE      &kp TAB  &kp RETURN  &kp ESCAPE                 &trans     &trans     &trans     &trans     &trans
             >;
         };
