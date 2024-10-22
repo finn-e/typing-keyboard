@@ -386,21 +386,11 @@
 
         default_layer {
             bindings = <
-&lt 5 ESCAPE  &kp N1          &kp N2           &kp N3              &kp N4            &kp N5      &tog 3                                                                               &mo 0    &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &lt 5 BACKSPACE
-&kp TAB       &caps_word      &kp Q            &lt 4 U             &kp Y             &kp TILDE   &kp DELETE                                                                           &tog 1   &kp J   &kp C              &lt 4 L              &kp F            &kp B            &kp BSLH
-&caps_word    &hm LEFT_GUI A  &hm LEFT_ALT O   &hm LEFT_CONTROL E  &hm LEFT_SHIFT I  &kp RETURN  &kp BACKSPACE  &kp LCTRL  &kp LALT                 &kp LEFT_META  &kp RIGHT_CONTROL  &tog 2   &kp W   &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &kp W
-&kp LSHFT     &kp K           &hm RIGHT_ALT X  &key_repeat         &lt 3 P           &kp J                                 &lt 4 K_APPLICATION      &ht                                        &kp Z   &kp G              &kp M                &hm RIGHT_ALT V  &kp UP_ARROW     &kp RSHFT
-&tog 3        &kp HOME        &kp PAGE_DOWN    &kp PAGE_UP         &kp END                       &lt 3 SPACE    &lt 5 TAB  &kp RETURN               &kp RET        &lt 5 T            &lt 4 H          &tog 4             &sl 4                &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
-            >;
-        };
-
-        layer_small_kbd_mask {
-            bindings = <
-&none   &none   &none   &none   &none   &none   &trans                                      &trans  &none   &none   &none   &none   &none   &none
-&none   &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &none
-&none   &trans  &trans  &trans  &trans  &trans  &trans  &none   &none       &none   &none   &trans  &trans  &trans  &trans  &trans  &trans  &none
-&none   &trans  &trans  &trans  &trans  &trans                  &none       &none                   &trans  &trans  &trans  &trans  &trans  &none
-&trans  &none   &none   &none   &none           &trans  &trans  &trans      &trans  &trans  &trans          &none   &none   &none   &none   &trans
+&lt 5 ESCAPE  &kp N1          &kp N2          &kp N3              &kp N4            &kp N5       &tog 4                                                                               &tog 5   &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &lt 5 BACKSPACE
+&kp TAB       &caps_word      &kp J           &lt 4 BACKSPACE     &kp RETURN        &kp TILDE    &kp DELETE                                                                           &tog 2   &kp W   &kp Y              &lt 4 L              &kp C            &kp P            &kp BSLH
+&caps_word    &hm LEFT_GUI A  &hm LEFT_ALT I  &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &key_repeat  &kp BACKSPACE  &kp LCTRL  &kp LALT                 &kp LEFT_META  &kp RIGHT_CONTROL  &tog 1   &kp F   &hm RIGHT_SHIFT S  &hm RIGHT_CONTROL R  &hm LEFT_ALT D   &hm RIGHT_GUI N  &kp P
+&kp LSHFT     &kp Q           &sl 4           &kp K               &lt 4 U           &kp GRAVE                              &lt 4 K_APPLICATION      &ht                                        &kp V   &kp G              &kp M                &hm RIGHT_ALT B  &kp UP_ARROW     &kp RSHFT
+&tog 3        &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP         &kp END                        &lt 3 SPACE    &lt 5 X    &kp Z                    &key_repeat    &lt 5 T            &lt 4 H          &tog 4             &sl 4                &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
             >;
         };
 
@@ -411,6 +401,16 @@
 &kp ESC         &kp A      &kp S         &kp D     &kp F      &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z      &kp X         &kp C     &kp V      &kp B                   &trans      &trans                  &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RIGHT_SHIFT
 &trans          &kp GRAVE  &kp CAPSLOCK  &kp LEFT  &kp RIGHT          &trans  &trans  &trans      &trans  &trans  &trans          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &trans
+            >;
+        };
+
+        layer_small_kbd_mask {
+            bindings = <
+&none   &none   &none   &none   &none   &none   &trans                                      &trans  &none   &none   &none   &none   &none   &none
+&none   &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &none
+&none   &trans  &trans  &trans  &trans  &trans  &trans  &none   &none       &none   &none   &trans  &trans  &trans  &trans  &trans  &trans  &none
+&none   &trans  &trans  &trans  &trans  &trans                  &none       &none                   &trans  &trans  &trans  &trans  &trans  &none
+&trans  &none   &none   &none   &none           &trans  &trans  &trans      &trans  &trans  &trans          &none   &none   &none   &none   &trans
             >;
         };
 
@@ -426,11 +426,11 @@
 
         layer_fn {
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans                                           &trans       &kp F6        &kp F7        &kp F8      &kp F9           &kp F10         &trans
-&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &bootloader                                      &bootloader  &kp F16       &kp F17       &kp F18     &kp F19          &kp F20         &trans
-&trans  &kp F21  &kp F22  &kp F23  &kp F24  &trans   &sys_reset   &trans  &trans      &trans  &trans  &sys_reset   &kp C_MUTE    &kp C_VOL_UP  &bl BL_INC  &kp PRINTSCREEN  &bl BL_TOG      &trans
-&trans  &trans   &trans   &trans   &trans   &trans                        &trans      &trans                       &kp CAPSLOCK  &kp C_VOL_DN  &bl BL_DEC  &kp SCROLLLOCK   &kp KP_NUMLOCK  &trans
-&trans  &trans   &trans   &trans   &trans            &trans       &trans  &trans      &trans  &trans  &trans                     &trans        &trans      &trans           &trans          &trans
+&trans  &trans   &trans   &trans   &trans   &trans      &trans                                           &trans       &trans           &trans             &trans      &trans      &trans      &trans
+&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5      &bootloader                                      &bootloader  &kp F6           &kp F7             &kp F8      &kp F9      &kp F10     &trans
+&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15     &sys_reset   &trans  &trans      &trans  &trans  &sys_reset   &kp F16          &kp F17            &kp F18     &kp F19     &kp F20     &trans
+&trans  &kp F21  &kp F22  &kp F23  &kp F24  &kp C_MUTE                       &trans      &trans                       &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &bl BL_INC  &bl BL_DEC  &bl BL_TOG  &trans
+&trans  &trans   &trans   &trans   &trans               &trans       &trans  &trans      &trans  &trans  &trans                        &trans             &trans      &trans      &trans      &trans
             >;
         };
 
@@ -441,6 +441,26 @@
 &trans  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &bt BT_SEL 1  &trans  &trans  &trans      &trans  &trans  &trans  &bt BT_SEL 4  &kp LEFT   &kp UP     &kp DOWN   &kp RIGHT  &trans
 &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &bt BT_SEL 2                  &trans      &trans                  &bt BT_CLR    &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)  &trans
 &trans  &trans     &trans     &trans     &trans                   &trans  &trans  &trans      &trans  &trans  &trans                &trans     &trans     &trans     &trans     &trans
+            >;
+        };
+
+        layer_august {
+            bindings = <
+&lt 5 ESCAPE  &kp N1          &kp N2           &kp N3              &kp N4            &kp N5     &tog 4                                                                               &mo 0    &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &lt 5 BACKSPACE
+&kp TAB       &caps_word      &kp Q            &lt 4 U             &key_repeat       &kp TILDE  &kp DELETE                                                                           &tog 3   &kp K   &kp G              &lt 4 H              &kp C            &kp V            &kp BSLH
+&caps_word    &hm LEFT_GUI A  &hm LEFT_ALT O   &hm LEFT_CONTROL E  &hm LEFT_SHIFT I  &kp P      &kp BACKSPACE  &kp LCTRL  &kp LALT                 &kp LEFT_META  &kp RIGHT_CONTROL  &tog 1   &kp M   &hm RIGHT_SHIFT T  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &kp W
+&kp LSHFT     &key_repeat     &hm RIGHT_ALT X  &kp Z               &lt 4 Y           &kp J                                &lt 4 K_APPLICATION      &ht                                        &kp B   &kp D              &kp L                &hm RIGHT_ALT F  &kp UP_ARROW     &kp RSHFT
+&tog 4        &kp HOME        &kp PAGE_DOWN    &kp PAGE_UP         &kp END                      &lt 4 SPACE    &lt 5 TAB  &kp RETURN               &kp RET        &lt 5 T            &lt 4 H          &tog 4             &sl 4                &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
+            >;
+        };
+
+        layer_thorn {
+            bindings = <
+&lt 5 ESCAPE  &kp N1          &kp N2           &kp N3              &kp N4            &kp N5      &tog 4                                                                               &mo 0    &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &lt 5 BACKSPACE
+&kp TAB       &caps_word      &kp Q            &lt 4 U             &kp Y             &kp TILDE   &kp DELETE                                                                           &tog 3   &kp J   &kp C              &lt 4 L              &kp F            &kp B            &kp BSLH
+&caps_word    &hm LEFT_GUI A  &hm LEFT_ALT O   &hm LEFT_CONTROL E  &hm LEFT_SHIFT I  &kp RETURN  &kp BACKSPACE  &kp LCTRL  &kp LALT                 &kp LEFT_META  &kp RIGHT_CONTROL  &tog 1   &kp W   &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &kp W
+&kp LSHFT     &kp K           &hm RIGHT_ALT X  &key_repeat         &lt 4 P           &kp J                                 &lt 4 K_APPLICATION      &ht                                        &kp Z   &kp G              &kp M                &hm RIGHT_ALT V  &kp UP_ARROW     &kp RSHFT
+&tog 4        &kp HOME        &kp PAGE_DOWN    &kp PAGE_UP         &kp END                       &lt 4 SPACE    &lt 5 TAB  &kp RETURN               &kp RET        &lt 5 T            &lt 4 H          &tog 4             &sl 4                &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
             >;
         };
     };
