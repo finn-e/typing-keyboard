@@ -387,9 +387,9 @@
         default_layer {
             bindings = <
 &lt 7 ESCAPE  &kp N1          &kp N2          &kp N3              &kp N4            &kp N5       &tog 6                                                                                  &tog 7   &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &lt 7 BACKSPACE
-&kp TAB       &caps_word      &kp BACKSPACE   &lt 6 DELETE        &kp RETURN        &kp TILDE    &tog 1                                                                                  &tog 4   &kp W   &kp Y              &lt 6 L              &kp C            &kp P            &kp BSLH
+&kp TAB       &caps_word      &kp BACKSPACE   &lt 7 DELETE        &kp RETURN        &kp GRAVE    &tog 1                                                                                  &tog 4   &kp W   &kp Y              &lt 7 L              &kp C            &kp P            &kp BSLH
 &caps_word    &hm LEFT_GUI A  &hm LEFT_ALT I  &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &key_repeat  &tog 2   &kp LCTRL    &kp LALT                 &mt LEFT_META ESCAPE  &kp RIGHT_CONTROL  &tog 3   &kp F   &hm RIGHT_SHIFT S  &hm RIGHT_CONTROL R  &hm LEFT_ALT D   &hm RIGHT_GUI N  &kp P
-&kp LSHFT     &kp Q           &kp J           &kp K               &lt 6 U           &kp GRAVE                          &lt 6 K_APPLICATION      &ht                                               &kp V   &kp G              &kp M                &hm RIGHT_ALT B  &kp UP_ARROW     &kp RSHFT
+&kp LSHFT     &kp Q           &kp J           &kp K               &lt 7 U           &kp TAB                            &lt 6 K_APPLICATION      &ht                                               &kp V   &lt 6 G            &kp M                &hm RIGHT_ALT B  &kp UP_ARROW     &kp RSHFT
 &tog 5        &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP         &kp END                        &lt 7 X  &lt 5 SPACE  &lt 6 Z                  &key_repeat           &lt 7 T            &lt 6 H          &none              &none                &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
             >;
         };
@@ -446,21 +446,21 @@
 
         layer_fn {
             bindings = <
-&trans  &trans   &trans   &trans   &trans   &trans      &trans                                                  &trans       &trans           &trans             &trans      &trans      &trans      &trans
-&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5      &bootloader                                             &bootloader  &kp F6           &kp F7             &kp F8      &kp F9      &kp F10     &trans
-&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15     &sys_reset   &trans         &trans      &trans  &trans  &sys_reset   &kp F16          &kp F17            &kp F18     &kp F19     &kp F20     &trans
-&trans  &kp F21  &kp F22  &kp F23  &kp F24  &kp C_MUTE                              &trans      &trans                       &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &bl BL_INC  &bl BL_DEC  &bl BL_TOG  &trans
-&trans  &trans   &trans   &trans   &trans               &trans       &kp BACKSPACE  &trans      &trans  &trans  &trans                        &trans             &trans      &trans      &trans      &trans
+&trans  &trans   &trans   &trans   &trans   &trans      &trans                                                      &trans       &trans           &trans             &trans      &trans      &trans      &trans
+&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5      &bootloader                                                 &bootloader  &kp F6           &kp F7             &kp F8      &kp F9      &kp F10     &trans
+&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15     &sys_reset   &trans         &trans          &trans  &trans  &sys_reset   &kp F16          &kp F17            &kp F18     &kp F19     &kp F20     &trans
+&trans  &kp F21  &kp F22  &kp F23  &kp F24  &kp C_MUTE                              &trans          &trans                       &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &bl BL_INC  &bl BL_DEC  &bl BL_TOG  &trans
+&trans  &trans   &trans   &trans   &trans               &kp ESCAPE   &kp BACKSPACE  &kp DELETE      &trans  &trans  &trans                        &trans             &trans      &trans      &trans      &trans
             >;
         };
 
         layer_vimnav {
             bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans        &trans                                           &trans       &trans        &trans     &trans     &trans     &trans     &trans
-&trans  &kp END    &kp PG_DN  &kp PG_UP  &kp HOME   &bt BT_SEL 0  &bootloader                                      &bootloader  &bt BT_SEL 3  &kp END    &kp PG_UP  &kp PG_DN  &kp HOME   &trans
-&trans  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &bt BT_SEL 1  &sys_reset   &trans  &trans      &trans  &trans  &sys_reset   &bt BT_SEL 4  &kp LEFT   &kp UP     &kp DOWN   &kp RIGHT  &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &bt BT_SEL 2                       &trans      &trans                       &bt BT_CLR    &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)  &trans
-&trans  &trans     &trans     &trans     &trans                   &trans       &trans  &trans      &trans  &trans  &trans                     &trans     &trans     &trans     &trans     &trans
+&trans  &trans     &trans     &trans     &trans     &trans        &trans                                                           &trans       &trans        &trans     &trans     &trans     &trans     &trans
+&trans  &kp END    &kp PG_DN  &kp PG_UP  &kp HOME   &bt BT_SEL 0  &bootloader                                                      &bootloader  &bt BT_SEL 3  &kp END    &kp PG_UP  &kp PG_DN  &kp HOME   &trans
+&trans  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &bt BT_SEL 1  &sys_reset   &trans         &trans          &trans   &trans      &sys_reset   &bt BT_SEL 4  &kp LEFT   &kp UP     &kp DOWN   &kp RIGHT  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &bt BT_SEL 2                              &trans          &trans                            &bt BT_CLR    &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)  &trans
+&trans  &trans     &trans     &trans     &trans                   &kp ESCAPE   &kp BACKSPACE  &kp DELETE      &kp TAB  &kp RETURN  &kp ESCAPE                 &trans     &trans     &trans     &trans     &trans
             >;
         };
     };
