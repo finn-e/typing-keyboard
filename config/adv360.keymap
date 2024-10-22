@@ -387,9 +387,9 @@
         default_layer {
             bindings = <
 &lt 7 ESCAPE  &kp N1          &kp N2          &kp N3              &kp N4            &kp N5       &tog 6                                                                                  &tog 7   &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &lt 7 BACKSPACE
-&kp TAB       &caps_word      &kp BACKSPACE   &lt 7 DELETE        &kp RETURN        &kp GRAVE    &tog 1                                                                                  &tog 4   &kp W   &kp Y              &lt 7 L              &kp C            &kp P            &kp BSLH
-&caps_word    &hm LEFT_GUI A  &hm LEFT_ALT I  &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &key_repeat  &tog 2   &kp LCTRL    &kp LALT                 &mt LEFT_META ESCAPE  &kp RIGHT_CONTROL  &tog 3   &kp F   &hm RIGHT_SHIFT S  &hm RIGHT_CONTROL R  &hm LEFT_ALT D   &hm RIGHT_GUI N  &kp P
-&kp LSHFT     &kp Q           &kp J           &kp K               &lt 7 U           &kp TAB                            &lt 6 K_APPLICATION      &ht                                               &kp V   &lt 6 G            &kp M                &hm RIGHT_ALT B  &kp UP_ARROW     &kp RSHFT
+&kp TAB       &caps_word      &kp BACKSPACE   &lt 6 DELETE        &kp RETURN        &kp TAB      &tog 1                                                                                  &tog 4   &kp W   &kp Y              &lt 6 L              &kp C            &kp P            &kp RETURN
+&caps_word    &hm LEFT_GUI A  &hm LEFT_ALT I  &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &key_repeat  &tog 2   &kp LCTRL    &kp LALT                 &mt LEFT_META ESCAPE  &kp RIGHT_CONTROL  &tog 3   &kp F   &hm RIGHT_SHIFT S  &hm RIGHT_CONTROL R  &hm LEFT_ALT D   &hm RIGHT_GUI N  &lt 5 P
+&kp LS(TAB)   &lt 5 Q         &kp J           &kp K               &lt 7 U           &kp GRAVE                          &lt 6 K_APPLICATION      &ht                                               &kp V   &lt 7 G            &kp M                &hm RIGHT_ALT B  &kp UP_ARROW     &kp TAB
 &tog 5        &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP         &kp END                        &lt 7 X  &lt 5 SPACE  &lt 6 Z                  &key_repeat           &lt 7 T            &lt 6 H          &none              &none                &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
             >;
         };
