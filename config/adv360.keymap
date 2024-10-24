@@ -37,6 +37,16 @@
             bindings = <&kp>, <&kp>;
 */
         };
+
+        tl: tl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TL";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <175>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&kp>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -55,11 +65,11 @@
 
         default_layer {
             bindings = <
-&bootloader  &kp N1      &kp N2         &kp N3   &kp N4      &kp N5       &bt BT_CLR                                                                          &bt BT_CLR    &kp N6  &kp N7  &kp N8  &kp N9          &kp N0          &bootloader
-&sys_reset   &caps_word  &kp BACKSPACE  &kp RET  &kp DELETE  &kp TAB      &bt BT_SEL 0                                                                        &bt BT_SEL 2  &kp W   &kp Y   &kp L   &kp C           &kp P           &sys_reset
-&none        &kp A       &kp I          &kp O    &kp E       &key_repeat  &bt BT_SEL 1  &kp LEFT_CONTROL  &kp LEFT_ALT             &kp LEFT_META  &kp ESCAPE  &bt BT_SEL 3  &kp F   &kp S   &kp R   &kp D           &kp N           &none
-&none        &kp Q       &kp J          &kp K    &kp U       &kp GRAVE                                    &lt 0 K_APPLICATION      &ht                                      &kp V   &kp G   &kp M   &kp B           &kp UP_ARROW    &none
-&none        &none       &none          &none    &none                    &kp X         &kp SPACE         &kp Z                    &key_repeat    &kp T       &kp H                 &none   &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&bt BT_SEL 0  &kp N1      &kp N2         &kp N3   &kp N4      &kp N5       &bootloader                                                                        &bootloader  &kp N6  &kp N7  &kp N8  &kp N9          &kp N0          &bt BT_SEL 0
+&bt BT_SEL 1  &caps_word  &kp BACKSPACE  &kp RET  &kp DELETE  &kp TAB      &sys_reset                                                                         &sys_reset   &kp W   &kp Y   &kp L   &kp C           &kp P           &bt BT_SEL 1
+&bt BT_SEL 2  &kp A       &kp I          &kp O    &kp E       &key_repeat  &soft_off    &kp LEFT_CONTROL  &kp LEFT_ALT             &kp LEFT_META  &kp ESCAPE  &soft_off    &kp F   &kp S   &kp R   &kp D           &kp N           &bt BT_SEL 2
+&bt BT_SEL 3  &kp Q       &kp J          &kp K    &kp U       &kp GRAVE                                   &lt 0 K_APPLICATION      &ht                                     &kp V   &kp G   &kp M   &kp B           &kp UP_ARROW    &bt BT_SEL 3
+&bt BT_CLR    &none       &none          &none    &none                    &kp X        &kp SPACE         &kp Z                    &key_repeat    &kp T       &kp H                &none   &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
         };
     };
