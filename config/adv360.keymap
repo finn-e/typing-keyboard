@@ -55,9 +55,9 @@
 
         default_layer {
             bindings = <
-&bootloader  &kp N1      &kp N2         &kp N3   &kp N4      &kp N5       &bt BT_SEL 0                                                                        &bt BT_SEL 2  &kp N6  &kp N7  &kp N8  &kp N9          &kp N0          &bootloader
-&sys_reset   &caps_word  &kp BACKSPACE  &kp RET  &kp DELETE  &kp TAB      &bt BT_SEL 1                                                                        &bt BT_SEL 3  &kp W   &kp Y   &kp L   &kp C           &kp P           &sys_reset
-&none        &kp A       &kp I          &kp O    &kp E       &key_repeat  &bt BT_CLR    &kp LEFT_CONTROL  &kp LEFT_ALT             &kp LEFT_META  &kp ESCAPE  &bt BT_CLR    &kp F   &kp S   &kp R   &kp D           &kp N           &none
+&bootloader  &kp N1      &kp N2         &kp N3   &kp N4      &kp N5       &bt BT_CLR                                                                          &bt BT_CLR    &kp N6  &kp N7  &kp N8  &kp N9          &kp N0          &bootloader
+&sys_reset   &caps_word  &kp BACKSPACE  &kp RET  &kp DELETE  &kp TAB      &bt BT_SEL 0                                                                        &bt BT_SEL 2  &kp W   &kp Y   &kp L   &kp C           &kp P           &sys_reset
+&none        &kp A       &kp I          &kp O    &kp E       &key_repeat  &bt BT_SEL 1  &kp LEFT_CONTROL  &kp LEFT_ALT             &kp LEFT_META  &kp ESCAPE  &bt BT_SEL 3  &kp F   &kp S   &kp R   &kp D           &kp N           &none
 &none        &kp Q       &kp J          &kp K    &kp U       &kp GRAVE                                    &lt 0 K_APPLICATION      &ht                                      &kp V   &kp G   &kp M   &kp B           &kp UP_ARROW    &none
 &none        &none       &none          &none    &none                    &kp X         &kp SPACE         &kp Z                    &key_repeat    &kp T       &kp H                 &none   &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
