@@ -9,11 +9,11 @@
  * edit it directly.
  */
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
+#include <behaviors.dtsi>;
+#include <dt-bindings/zmk/backlight.h>;
+#include <dt-bindings/zmk/bt.h>;
+#include <dt-bindings/zmk/keys.h>;
+#include <dt-bindings/zmk/keys.h>;
 
 / {
     behaviors {
@@ -55,231 +55,277 @@
         compatible = "zmk,combos";
 
         n1 {
+            timeout-ms=<40>;
             bindings = <&kp NUMBER_1>;
             key-positions = <15 29>;
         };
 
         n2 {
+            timeout-ms=<40>;
             bindings = <&kp NUMBER_2>;
             key-positions = <16 30>;
         };
 
         n3 {
+            timeout-ms=<40>;
             bindings = <&kp NUMBER_3>;
             key-positions = <17 31>;
         };
 
         n4 {
+            timeout-ms=<40>;
             bindings = <&kp NUMBER_4>;
             key-positions = <18 32>;
         };
 
         n5 {
+            timeout-ms=<40>;
             bindings = <&kp NUMBER_5>;
             key-positions = <19 33>;
         };
 
         n6 {
+            timeout-ms=<40>;
             bindings = <&kp NUMBER_6>;
             key-positions = <22 40>;
         };
 
         n7 {
+            timeout-ms=<40>;
             bindings = <&kp NUMBER_7>;
             key-positions = <23 41>;
         };
 
         n8 {
+            timeout-ms=<40>;
             bindings = <&kp NUMBER_8>;
             key-positions = <42 24>;
         };
 
         n9 {
+            timeout-ms=<40>;
             bindings = <&kp NUMBER_9>;
             key-positions = <25 43>;
         };
 
         n0 {
+            timeout-ms=<40>;
             bindings = <&kp NUMBER_0>;
             key-positions = <44 26>;
         };
 
         s1 {
+            timeout-ms=<40>;
             bindings = <&kp EXCLAMATION>;
             key-positions = <29 47>;
         };
 
         s2 {
+            timeout-ms=<40>;
             bindings = <&kp AT_SIGN>;
             key-positions = <48 30>;
         };
 
         s3 {
+            timeout-ms=<40>;
             bindings = <&kp HASH>;
             key-positions = <17 31>;
         };
 
         s4 {
+            timeout-ms=<40>;
             bindings = <&kp DOLLAR>;
             key-positions = <32 50>;
         };
 
         s5 {
+            timeout-ms=<40>;
             bindings = <&kp PERCENT>;
             key-positions = <33 51>;
         };
 
         s6 {
+            timeout-ms=<40>;
             bindings = <&kp CARET>;
             key-positions = <54 40>;
         };
 
         s7 {
+            timeout-ms=<40>;
             bindings = <&kp AMPERSAND>;
             key-positions = <41 55>;
         };
 
         s8 {
+            timeout-ms=<40>;
             bindings = <&kp ASTERISK>;
             key-positions = <42 56>;
         };
 
         s9 {
+            timeout-ms=<40>;
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <57 43>;
         };
 
         s0 {
+            timeout-ms=<40>;
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <58 44>;
         };
 
         hr-apos {
+            timeout-ms=<40>;
             bindings = <&kp APOSTROPHE>;
             key-positions = <29 30>;
         };
 
         hr-fslash {
+            timeout-ms=<40>;
             bindings = <&kp SLASH>;
             key-positions = <29 31>;
         };
 
         hr-colon {
+            timeout-ms=<40>;
             bindings = <&kp COLON>;
             key-positions = <29 32>;
         };
 
         hr-under {
+            timeout-ms=<40>;
             bindings = <&kp UNDERSCORE>;
             key-positions = <30 31>;
         };
 
         hr-excl {
+            timeout-ms=<40>;
             bindings = <&kp EXCLAMATION>;
             key-positions = <30 32>;
         };
 
         hr-dot {
+            timeout-ms=<40>;
             bindings = <&kp DOT>;
             key-positions = <32 31>;
         };
 
         hr-comma {
+            timeout-ms=<40>;
             bindings = <&kp COMMA>;
             key-positions = <41 42>;
         };
 
         hr-ques {
+            timeout-ms=<40>;
             bindings = <&kp QUESTION>;
             key-positions = <41 43>;
         };
 
         hr-semi {
+            timeout-ms=<40>;
             bindings = <&kp SEMICOLON>;
             key-positions = <41 44>;
         };
 
         hr-dash {
+            timeout-ms=<40>;
             bindings = <&kt MINUS>;
             key-positions = <42 43>;
         };
 
         hr-bslash {
+            timeout-ms=<40>;
             bindings = <&kp BACKSLASH>;
             key-positions = <42 44>;
         };
 
         hr-dqt {
+            timeout-ms=<40>;
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <44 43>;
         };
 
         lbrace {
+            timeout-ms=<40>;
             bindings = <&kp LEFT_BRACE>;
             key-positions = <18 19>;
         };
 
         rbrace {
+            timeout-ms=<40>;
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <22 23>;
         };
 
         lparen {
+            timeout-ms=<40>;
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <33 32>;
         };
 
         rparen {
+            timeout-ms=<40>;
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <40 41>;
         };
 
         lbrkt {
+            timeout-ms=<40>;
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <51 50>;
         };
 
         rbrkt {
+            timeout-ms=<40>;
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <54 55>;
         };
 
         bspace {
+            timeout-ms=<40>;
             bindings = <&kp BACKSPACE>;
             key-positions = <50 49>;
         };
 
         delete {
+            timeout-ms=<40>;
             bindings = <&kp DELETE>;
             key-positions = <55 56>;
         };
 
         lkeyrepeat {
+            timeout-ms=<40>;
             bindings = <&key_repeat>;
             key-positions = <48 49>;
         };
 
         rkeyrepeat {
+            timeout-ms=<40>;
             bindings = <&key_repeat>;
             key-positions = <57 56>;
         };
 
         lcapsword {
+            timeout-ms=<40>;
             bindings = <&caps_word>;
             key-positions = <47 48>;
         };
 
         rcapsword {
+            timeout-ms=<40>;
             bindings = <&caps_word>;
             key-positions = <58 57>;
         };
 
         esc {
+            timeout-ms=<40>;
             bindings = <&kp ESCAPE>;
             key-positions = <32 31 30>;
         };
 
         return {
+            timeout-ms=<40>;
             bindings = <&kp RETURN>;
             key-positions = <41 42 43>;
         };
