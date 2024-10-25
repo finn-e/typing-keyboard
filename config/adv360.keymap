@@ -370,18 +370,6 @@ combos {
         bindings = <&ht>;
         key-positions = <68 69>;
     };
-
-    t-less {
-        timeout-ms = <40>;
-        bindings = <&kp LESS>;
-        key-positions = <15 16>;
-    };
-
-    t-more {
-        timeout-ms = <40>;
-        bindings = <&kp MORE>;
-        key-positions = <25 26>;
-    };
 };
 
 macros {
