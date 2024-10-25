@@ -282,13 +282,13 @@
             key-positions = <54 55>;
         };
 
-        b-backspace {
+        l-backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <50 49>;
         };
 
-        b-delete {
-            bindings = <&kp DELETE>;
+        r-bspace {
+            bindings = <&kp BACKSPACE>;
             key-positions = <55 56>;
         };
 
@@ -328,15 +328,15 @@
             key-positions = <41 42 43>;
         };
 
-        t-delete {
+        l-delete {
             timeout-ms = <40>;
             bindings = <&kp DELETE>;
             key-positions = <17 16>;
         };
 
-        t-bspace {
+        r-delete {
             timeout-ms = <40>;
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp DELETE>;
             key-positions = <24 25>;
         };
 
