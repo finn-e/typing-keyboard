@@ -20,16 +20,16 @@
         #include "macros.dtsi"
         #include "version.dtsi"
 
-    hm: homerow_mods {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick_tap_ms = <175>;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
-        
-        /* Another possibility:
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <175>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+
+            /* Another possibility:
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
@@ -38,439 +38,457 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         */
+        };
+
+        tl: tap_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Tap Layer";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <175>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&kp>;
+        };
     };
 
-    tl: tap_layer {
-        compatible = "zmk,behavior-hold-tap";
-        label = "Tap Layer";
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick_tap_ms = <175>;
-        flavor = "tap-preferred";
-        bindings = <&mo>, <&kp>;
+    combos {
+        compatible = "zmk,combos";
+
+        n1 {
+            timeout-ms = <40>;
+            bindings = <&kp NUMBER_1>;
+            key-positions = <15 29>;
+        };
+
+        n2 {
+            timeout-ms = <40>;
+            bindings = <&kp NUMBER_2>;
+            key-positions = <16 30>;
+        };
+
+        n3 {
+            timeout-ms = <40>;
+            bindings = <&kp NUMBER_3>;
+            key-positions = <17 31>;
+        };
+
+        n4 {
+            timeout-ms = <40>;
+            bindings = <&kp NUMBER_4>;
+            key-positions = <18 32>;
+        };
+
+        n5 {
+            timeout-ms = <40>;
+            bindings = <&kp NUMBER_5>;
+            key-positions = <19 33>;
+        };
+
+        n6 {
+            timeout-ms = <40>;
+            bindings = <&kp NUMBER_6>;
+            key-positions = <22 40>;
+        };
+
+        n7 {
+            timeout-ms = <40>;
+            bindings = <&kp NUMBER_7>;
+            key-positions = <23 41>;
+        };
+
+        n8 {
+            timeout-ms = <40>;
+            bindings = <&kp NUMBER_8>;
+            key-positions = <42 24>;
+        };
+
+        n9 {
+            timeout-ms = <40>;
+            bindings = <&kp NUMBER_9>;
+            key-positions = <25 43>;
+        };
+
+        n0 {
+            timeout-ms = <40>;
+            bindings = <&kp NUMBER_0>;
+            key-positions = <44 26>;
+        };
+
+        s1 {
+            timeout-ms = <40>;
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <29 47>;
+        };
+
+        s2 {
+            timeout-ms = <40>;
+            bindings = <&kp AT_SIGN>;
+            key-positions = <48 30>;
+        };
+
+        s3 {
+            timeout-ms = <40>;
+            bindings = <&kp HASH>;
+            key-positions = <17 31>;
+        };
+
+        s4 {
+            timeout-ms = <40>;
+            bindings = <&kp DOLLAR>;
+            key-positions = <32 50>;
+        };
+
+        s5 {
+            timeout-ms = <40>;
+            bindings = <&kp PERCENT>;
+            key-positions = <33 51>;
+        };
+
+        s6 {
+            timeout-ms = <40>;
+            bindings = <&kp CARET>;
+            key-positions = <54 40>;
+        };
+
+        s7 {
+            timeout-ms = <40>;
+            bindings = <&kp AMPERSAND>;
+            key-positions = <41 55>;
+        };
+
+        s8 {
+            timeout-ms = <40>;
+            bindings = <&kp ASTERISK>;
+            key-positions = <42 56>;
+        };
+
+        s9 {
+            timeout-ms = <40>;
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <57 43>;
+        };
+
+        s0 {
+            timeout-ms = <40>;
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <58 44>;
+        };
+
+        hr-apos {
+            timeout-ms = <40>;
+            bindings = <&kp APOSTROPHE>;
+            key-positions = <29 30>;
+        };
+
+        hr-fslash {
+            timeout-ms = <40>;
+            bindings = <&kp SLASH>;
+            key-positions = <29 31>;
+        };
+
+        hr-colon {
+            timeout-ms = <40>;
+            bindings = <&kp COLON>;
+            key-positions = <29 32>;
+        };
+
+        hr-under {
+            timeout-ms = <40>;
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <30 31>;
+        };
+
+        hr-excl {
+            timeout-ms = <40>;
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <30 32>;
+        };
+
+        hr-dot {
+            timeout-ms = <40>;
+            bindings = <&kp DOT>;
+            key-positions = <32 31>;
+        };
+
+        hr-comma {
+            timeout-ms = <40>;
+            bindings = <&kp COMMA>;
+            key-positions = <41 42>;
+        };
+
+        hr-ques {
+            timeout-ms = <40>;
+            bindings = <&kp QUESTION>;
+            key-positions = <41 43>;
+        };
+
+        hr-semi {
+            timeout-ms = <40>;
+            bindings = <&kp SEMICOLON>;
+            key-positions = <41 44>;
+        };
+
+        hr-dash {
+            timeout-ms = <40>;
+            bindings = <&kt MINUS>;
+            key-positions = <42 43>;
+        };
+
+        hr-bslash {
+            timeout-ms = <40>;
+            bindings = <&kp BACKSLASH>;
+            key-positions = <42 44>;
+        };
+
+        hr-dqt {
+            timeout-ms = <40>;
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <44 43>;
+        };
+
+        lbrace {
+            timeout-ms = <40>;
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <18 19>;
+        };
+
+        rbrace {
+            timeout-ms = <40>;
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <22 23>;
+        };
+
+        lparen {
+            timeout-ms = <40>;
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <33 32>;
+        };
+
+        rparen {
+            timeout-ms = <40>;
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <40 41>;
+        };
+
+        lbrkt {
+            timeout-ms = <40>;
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <51 50>;
+        };
+
+        rbrkt {
+            timeout-ms = <40>;
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <54 55>;
+        };
+
+        b-backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <50 49>;
+        };
+
+        b-delete {
+            bindings = <&kp DELETE>;
+            key-positions = <55 56>;
+        };
+
+        lkeyrepeat {
+            timeout-ms = <40>;
+            bindings = <&key_repeat>;
+            key-positions = <48 49>;
+        };
+
+        rkeyrepeat {
+            timeout-ms = <40>;
+            bindings = <&key_repeat>;
+            key-positions = <57 56>;
+        };
+
+        lcapsword {
+            timeout-ms = <40>;
+            bindings = <&caps_word>;
+            key-positions = <47 48>;
+        };
+
+        rcapsword {
+            timeout-ms = <40>;
+            bindings = <&caps_word>;
+            key-positions = <58 57>;
+        };
+
+        esc {
+            timeout-ms = <40>;
+            bindings = <&kp ESCAPE>;
+            key-positions = <32 31 30>;
+        };
+
+        return {
+            timeout-ms = <40>;
+            bindings = <&kp RETURN>;
+            key-positions = <41 42 43>;
+        };
+
+        t-delete {
+            timeout-ms = <40>;
+            bindings = <&kp DELETE>;
+            key-positions = <17 16>;
+        };
+
+        t-bspace {
+            timeout-ms = <40>;
+            bindings = <&kp BACKSPACE>;
+            key-positions = <24 25>;
+        };
+
+        th-dash {
+            timeout-ms = <40>;
+            bindings = <&kp MINUS>;
+            key-positions = <66 65>;
+        };
+
+        th-under {
+            timeout-ms = <40>;
+            bindings = <&kp UNDER>;
+            key-positions = <66 67>;
+        };
+
+        th-Th {
+            timeout-ms = <40>;
+            bindings = <&Th>;
+            key-positions = <69 70>;
+        };
+
+        th-ht {
+            timeout-ms = <40>;
+            bindings = <&ht>;
+            key-positions = <68 69>;
+        };
+
+        t-less {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <15 16>;
+        };
+
+        t-greater {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <26 25>;
+        };
+
+        t-pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <19 18>;
+        };
+
+        t-amps {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <22 23>;
+        };
     };
 
-};
+    macros {
+        ht: ht {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp T>;
+            label = "HT";
+        };
 
-combos {
-    compatible = "zmk,combos";
+        double0: double0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &kp N0>;
+            label = "DOUBLE0";
+        };
 
-    n1 {
-        timeout-ms = <40>;
-        bindings = <&kp NUMBER_1>;
-        key-positions = <15 29>;
+        Th: Th {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp H>;
+            label = "TH";
+        };
     };
 
-    n2 {
-        timeout-ms = <40>;
-        bindings = <&kp NUMBER_2>;
-        key-positions = <16 30>;
-    };
+    keymap {
+        compatible = "zmk,keymap";
 
-    n3 {
-        timeout-ms = <40>;
-        bindings = <&kp NUMBER_3>;
-        key-positions = <17 31>;
-    };
-
-    n4 {
-        timeout-ms = <40>;
-        bindings = <&kp NUMBER_4>;
-        key-positions = <18 32>;
-    };
-
-    n5 {
-        timeout-ms = <40>;
-        bindings = <&kp NUMBER_5>;
-        key-positions = <19 33>;
-    };
-
-    n6 {
-        timeout-ms = <40>;
-        bindings = <&kp NUMBER_6>;
-        key-positions = <22 40>;
-    };
-
-    n7 {
-        timeout-ms = <40>;
-        bindings = <&kp NUMBER_7>;
-        key-positions = <23 41>;
-    };
-
-    n8 {
-        timeout-ms = <40>;
-        bindings = <&kp NUMBER_8>;
-        key-positions = <42 24>;
-    };
-
-    n9 {
-        timeout-ms = <40>;
-        bindings = <&kp NUMBER_9>;
-        key-positions = <25 43>;
-    };
-
-    n0 {
-        timeout-ms = <40>;
-        bindings = <&kp NUMBER_0>;
-        key-positions = <44 26>;
-    };
-
-    s1 {
-        timeout-ms = <40>;
-        bindings = <&kp EXCLAMATION>;
-        key-positions = <29 47>;
-    };
-
-    s2 {
-        timeout-ms = <40>;
-        bindings = <&kp AT_SIGN>;
-        key-positions = <48 30>;
-    };
-
-    s3 {
-        timeout-ms = <40>;
-        bindings = <&kp HASH>;
-        key-positions = <17 31>;
-    };
-
-    s4 {
-        timeout-ms = <40>;
-        bindings = <&kp DOLLAR>;
-        key-positions = <32 50>;
-    };
-
-    s5 {
-        timeout-ms = <40>;
-        bindings = <&kp PERCENT>;
-        key-positions = <33 51>;
-    };
-
-    s6 {
-        timeout-ms = <40>;
-        bindings = <&kp CARET>;
-        key-positions = <54 40>;
-    };
-
-    s7 {
-        timeout-ms = <40>;
-        bindings = <&kp AMPERSAND>;
-        key-positions = <41 55>;
-    };
-
-    s8 {
-        timeout-ms = <40>;
-        bindings = <&kp ASTERISK>;
-        key-positions = <42 56>;
-    };
-
-    s9 {
-        timeout-ms = <40>;
-        bindings = <&kp LEFT_PARENTHESIS>;
-        key-positions = <57 43>;
-    };
-
-    s0 {
-        timeout-ms = <40>;
-        bindings = <&kp RIGHT_PARENTHESIS>;
-        key-positions = <58 44>;
-    };
-
-    hr-apos {
-        timeout-ms = <40>;
-        bindings = <&kp APOSTROPHE>;
-        key-positions = <29 30>;
-    };
-
-    hr-fslash {
-        timeout-ms = <40>;
-        bindings = <&kp SLASH>;
-        key-positions = <29 31>;
-    };
-
-    hr-colon {
-        timeout-ms = <40>;
-        bindings = <&kp COLON>;
-        key-positions = <29 32>;
-    };
-
-    hr-under {
-        timeout-ms = <40>;
-        bindings = <&kp UNDERSCORE>;
-        key-positions = <30 31>;
-    };
-
-    hr-excl {
-        timeout-ms = <40>;
-        bindings = <&kp EXCLAMATION>;
-        key-positions = <30 32>;
-    };
-
-    hr-dot {
-        timeout-ms = <40>;
-        bindings = <&kp DOT>;
-        key-positions = <32 31>;
-    };
-
-    hr-comma {
-        timeout-ms = <40>;
-        bindings = <&kp COMMA>;
-        key-positions = <41 42>;
-    };
-
-    hr-ques {
-        timeout-ms = <40>;
-        bindings = <&kp QUESTION>;
-        key-positions = <41 43>;
-    };
-
-    hr-semi {
-        timeout-ms = <40>;
-        bindings = <&kp SEMICOLON>;
-        key-positions = <41 44>;
-    };
-
-    hr-dash {
-        timeout-ms = <40>;
-        bindings = <&kt MINUS>;
-        key-positions = <42 43>;
-    };
-
-    hr-bslash {
-        timeout-ms = <40>;
-        bindings = <&kp BACKSLASH>;
-        key-positions = <42 44>;
-    };
-
-    hr-dqt {
-        timeout-ms = <40>;
-        bindings = <&kp DOUBLE_QUOTES>;
-        key-positions = <44 43>;
-    };
-
-    lbrace {
-        timeout-ms = <40>;
-        bindings = <&kp LEFT_BRACE>;
-        key-positions = <18 19>;
-    };
-
-    rbrace {
-        timeout-ms = <40>;
-        bindings = <&kp RIGHT_BRACE>;
-        key-positions = <22 23>;
-    };
-
-    lparen {
-        timeout-ms = <40>;
-        bindings = <&kp LEFT_PARENTHESIS>;
-        key-positions = <33 32>;
-    };
-
-    rparen {
-        timeout-ms = <40>;
-        bindings = <&kp RIGHT_PARENTHESIS>;
-        key-positions = <40 41>;
-    };
-
-    lbrkt {
-        timeout-ms = <40>;
-        bindings = <&kp LEFT_BRACKET>;
-        key-positions = <51 50>;
-    };
-
-    rbrkt {
-        timeout-ms = <40>;
-        bindings = <&kp RIGHT_BRACKET>;
-        key-positions = <54 55>;
-    };
-
-    b-backspace {
-        bindings = <&kp BACKSPACE>;
-        key-positions = <50 49>;
-    };
-
-    b-delete {
-        bindings = <&kp DELETE>;
-        key-positions = <55 56>;
-    };
-
-    lkeyrepeat {
-        timeout-ms = <40>;
-        bindings = <&key_repeat>;
-        key-positions = <48 49>;
-    };
-
-    rkeyrepeat {
-        timeout-ms = <40>;
-        bindings = <&key_repeat>;
-        key-positions = <57 56>;
-    };
-
-    lcapsword {
-        timeout-ms = <40>;
-        bindings = <&caps_word>;
-        key-positions = <47 48>;
-    };
-
-    rcapsword {
-        timeout-ms = <40>;
-        bindings = <&caps_word>;
-        key-positions = <58 57>;
-    };
-
-    esc {
-        timeout-ms = <40>;
-        bindings = <&kp ESCAPE>;
-        key-positions = <32 31 30>;
-    };
-
-    return {
-        timeout-ms = <40>;
-        bindings = <&kp RETURN>;
-        key-positions = <41 42 43>;
-    };
-
-    t-delete {
-        timeout-ms = <40>;
-        bindings = <&kp DELETE>;
-        key-positions = <17 16>;
-    };
-
-    t-bspace {
-        timeout-ms = <40>;
-        bindings = <&kp BACKSPACE>;
-        key-positions = <24 25>;
-    };
-
-    th-dash {
-        timeout-ms = <40>;
-        bindings = <&kp MINUS>;
-        key-positions = <66 65>;
-    };
-
-    th-under {
-        timeout-ms = <40>;
-        bindings = <&kp UNDER>;
-        key-positions = <66 67>;
-    };
-
-    th-Th {
-        timeout-ms = <40>;
-        bindings = <&Th>;
-        key-positions = <69 70>;
-    };
-
-    th-ht {
-        timeout-ms = <40>;
-        bindings = <&ht>;
-        key-positions = <68 69>;
-    };
-};
-
-macros {
-    ht: ht {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings = <&kp H &kp T>;
-        label = "HT";
-    };
-
-    double0: double0 {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings = <&kp N0 &kp N0>;
-        label = "DOUBLE0";
-    };
-
-    Th: Th {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings = <&kp LS(T) &kp H>;
-        label = "TH";
-    };
-};
-
-keymap {
-    compatible = "zmk,keymap";
-
-    anders_base_layer {
-        bindings = <
+        anders_base_layer {
+            bindings = <
 &bt BT_SEL 0  &kp N1          &kp N2           &kp N3              &kp N4            &kp N5       &bootloader                                                                 &bootloader  &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &sl 6
 &bt BT_SEL 1  &caps_word      &kp BACKSPACE    &kp RET             &kp DELETE        &kp TAB      &sys_reset                                                                  &sys_reset   &kp W   &kp Y              &kp L                &kp C            &kp P            &kp C_VOLUME_UP
 &bt BT_SEL 2  &hm LEFT_GUI A  &hm LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &key_repeat  &bl BL_DEC   &kp LEFT_CONTROL  &kp LEFT_ALT      &kp RIGHT_ALT  &kp ESCAPE  &bl BL_INC   &kp F   &hm RIGHT_SHIFT S  &hm RIGHT_CONTROL R  &hm LEFT_ALT D   &hm RIGHT_GUI N  &kp K_MUTE
 &bt BT_SEL 3  &kp Q           &hm RIGHT_ALT J  &kp K               &kp U             &kp GRAVE                                   &kp LEFT_GUI      &kp RMETA                               &kp V   &kp G              &kp M                &hm RIGHT_ALT B  &kp UP_ARROW     &kp C_VOLUME_DOWN
 &bt BT_CLR    &tog 1          &tog 2           &tog 3              &tog 7                         &tl 5 X      &tl 4 SPACE       &tl 6 Z           &tl 6 RETURN   &tl 4 T     &tl 5 H              &none              &none                &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
-        >;
-    };
+            >;
+        };
 
-    typing_layer {
-        bindings = <
+        typing_layer {
+            bindings = <
 &bt BT_SEL 0  &kp N1      &kp N2         &kp N3     &kp N4      &kp N5       &bootloader                                                                                 &bootloader  &kp N6  &kp N7         &kp N8     &kp N9          &kp N0          &kp K_MUTE
 &bt BT_SEL 1  &caps_word  &kp BACKSPACE  &kp RET    &kp DELETE  &kp TAB      &sys_reset                                                                                  &sys_reset   &kp W   &kp Y          &kp L      &kp C           &kp P           &kp C_VOLUME_UP
 &bt BT_SEL 2  &kp A       &kp I          &kp O      &kp E       &key_repeat  &bl BL_DEC   &kp LEFT_CONTROL  &kp LEFT_ALT              &kp LEFT_META          &kp ESCAPE  &bl BL_INC   &kp F   &kp S          &kp R      &kp D           &kp N           &kp P
 &bt BT_SEL 3  &kp Q       &kp J          &kp K      &kp U       &kp GRAVE                                   &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS                           &kp V   &kp G          &kp M      &kp B           &kp UP_ARROW    &kp C_VOLUME_DOWN
 &bt BT_CLR    &tog 1      &kp MINUS      &kp COMMA  &kp PERIOD               &kp X        &kp SPACE         &kp Z                     &key_repeat            &kp T       &kp H                &kp BACKSLASH  &kp SLASH  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
-        >;
-    };
+            >;
+        };
 
-    qwerty_layer {
-        bindings = <
+        qwerty_layer {
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                            &trans   &trans  &trans  &trans     &trans   &trans    &trans
 &trans  &kp Q   &kp W   &kp E   &kp R   &kp T   &trans                                                            &trans   &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
 &trans  &kp A   &kp S   &kp D   &kp F   &kp G   &trans         &trans     &trans          &trans   &trans         &trans   &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
 &trans  &kp Z   &kp X   &kp C   &kp V   &kp B                             &trans          &trans                           &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
 &trans  &trans  &trans  &trans  &trans          &kp BACKSPACE  &kp SPACE  &kp DELETE      &kp RET  &kp BACKSPACE  &kp TAB          &trans  &trans     &trans   &trans    &trans
-        >;
-    };
+            >;
+        };
 
-    august_layer {
-        bindings = <
+        august_layer {
+            bindings = <
 &trans  &trans    &trans     &trans  &trans   &trans  &trans                                                            &trans   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp DOT   &kp COMMA  &kp U   &kp SQT  &kp Q   &trans                                                            &trans   &kp K   &kp G   &kp H   &kp C   &kp W   &trans
 &trans  &kp A     &kp O      &kp E   &kp I    &kp P   &trans         &trans     &trans          &trans   &trans         &trans   &kp M   &kp T   &kp N   &kp S   &kp R   &kp W
 &trans  &kp SEMI  &kp X      &kp Z   &kp Y    &kp J                             &trans          &trans                           &kp B   &kp D   &kp L   &kp F   &kp V   &trans
 &trans  &trans    &trans     &trans  &trans           &kp BACKSPACE  &kp SPACE  &kp DELETE      &kp RET  &kp BACKSPACE  &kp TAB          &trans  &trans  &trans  &trans  &trans
-        >;
-    };
+            >;
+        };
 
-    num_layer {
-        bindings = <
+        num_layer {
+            bindings = <
 &trans  &trans        &trans    &trans                 &trans     &trans        &trans                                                     &trans    &trans        &trans   &trans  &trans    &trans       &trans
 &trans  &kp ASTERISK  &kp PLUS  &kp MINUS              &kp FSLH   &bt BT_SEL 0  &trans                                                     &trans    &bt BT_SEL 2  &kp N7   &kp N8  &kp N9    &kp LS(TAB)  &trans
 &trans  &kp LGUI      &kp LALT  &kp LCTRL              &kp LSHFT  &bt BT_SEL 1  &trans         &trans     &trans          &trans   &trans  &trans    &bt BT_SEL 3  &kp N4   &kp N5  &kp N6    &kp TAB      &kp LS(TAB)
 &trans  &kp CARET     &kp LPAR  &kp RIGHT_PARENTHESIS  &kp EQUAL  &bt BT_CLR                              &trans          &trans                     &bt BT_CLR    &kp N1   &kp N2  &kp N3    &kp UP       &trans
 &trans  &none         &none     &none                  &none                    &kp BACKSPACE  &kp SPACE  &kp DELETE      &kp DOT  &kp N0  &double0                &kp DOT  &kp N0  &kp LEFT  &kp DOWN     &kp RIGHT
-        >;
-    };
+            >;
+        };
 
-    nav_layer {
-        bindings = <
+        nav_layer {
+            bindings = <
 &trans  &trans    &trans     &trans     &trans     &trans             &trans                                                                  &trans            &trans      &trans    &trans     &trans     &trans     &trans
 &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp C_VOLUME_UP    &trans                                                                  &trans            &bl BL_INC  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &trans
 &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp K_MUTE         &trans         &trans     &trans          &trans        &trans          &trans            &bl BL_TOG  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &kp END
 &trans  &kp HOME  &kp LEFT   &kp DOWN   &kp RIGHT  &kp C_VOLUME_DOWN                            &trans          &trans                                          &bl BL_DEC  &kp LEFT  &kp DOWN   &kp RIGHT  &trans     &trans
 &trans  &none     &none      &none      &none                         &kp BACKSPACE  &kp SPACE  &kp DELETE      &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LEFT_CONTROL              &trans    &trans     &trans     &trans     &trans
-        >;
-    };
+            >;
+        };
 
-    fn_layer {
-        bindings = <
+        fn_layer {
+            bindings = <
 &trans  &trans            &trans            &trans                &trans              &trans     &trans                                      &trans  &trans         &trans               &trans                 &trans            &trans             &trans
 &trans  &kp F1            &kp F2            &kp F3                &kp F4              &kp F5     &trans                                      &trans  &kp F6         &kp F7               &kp F8                 &kp F9            &kp F10            &trans
 &trans  &hm LEFT_GUI F11  &hm LEFT_ALT F12  &hm LEFT_CONTROL F13  &hm LEFT_SHIFT F14  &kp F15    &trans  &trans  &trans      &trans  &trans  &trans  &kp F16        &hm RIGHT_SHIFT F17  &hm RIGHT_CONTROL F18  &hm LEFT_ALT F19  &hm RIGHT_GUI F20  &kp F10
 &trans  &kp F21           &kp F22           &kp F23               &kp F24             &kp TILDE                  &trans      &trans                  &kp LS(LC(Z))  &kp LC(V)            &kp LC(C)              &kp LC(X)         &kp LC(Z)          &trans
 &trans  &none             &none             &none                 &none                          &trans  &trans  &trans      &trans  &trans  &trans                 &trans               &trans                 &trans            &trans             &trans
-        >;
-    };
+            >;
+        };
 
-    smol_kb_layer {
-        bindings = <
+        smol_kb_layer {
+            bindings = <
 &none   &none   &none   &none   &none   &none   &none                                       &none   &none   &none   &none   &none   &none   &none
 &none   &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans  &trans  &none
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &none   &none       &none   &none   &none   &trans  &trans  &trans  &trans  &trans  &trans
 &none   &trans  &trans  &trans  &trans  &trans                  &none       &none                   &trans  &trans  &trans  &trans  &none   &none
 &none   &none   &none   &none   &tog 7          &trans  &trans  &trans      &trans  &trans  &trans          &none   &none   &none   &none   &none
-        >;
+            >;
+        };
     };
-};
-
 };
