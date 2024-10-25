@@ -381,6 +381,7 @@ combos {
         timeout-ms = <40>;
         bindings = <&kp MORE>
         key-positions = <25 26>
+    };
 };
 
 macros {
