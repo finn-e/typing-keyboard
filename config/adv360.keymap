@@ -316,13 +316,13 @@
             key-positions = <58 57>;
         };
 
-        esc {
+        hl_return {
             timeout-ms = <40>;
-            bindings = <&kp ESCAPE>;
+            bindings = <&kp ENTER>;
             key-positions = <32 31 30>;
         };
 
-        return {
+        hr_return {
             timeout-ms = <40>;
             bindings = <&kp RETURN>;
             key-positions = <41 42 43>;
@@ -383,6 +383,41 @@
             bindings = <&kp AMPERSAND>;
             key-positions = <22 23>;
         };
+
+        bl_cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <47 48>;
+        };
+
+        bl_copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <48 49>;
+        };
+
+        bl_paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <49 50>;
+        };
+
+        tl_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <18 17>;
+        };
+
+        tl_plus {
+            bindings = <&kp PLUS>;
+            key-positions = <17 16>;
+        };
+
+        hl_escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <29 30 31>;
+        };
+
+        hr_escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <44 43 42>;
+        };
     };
 
     macros {
@@ -417,7 +452,7 @@
 &bt BT_SEL 1  &caps_word      &kp BACKSPACE    &kp RET             &kp DELETE        &kp TAB      &sys_reset                                                                  &sys_reset   &kp W   &kp Y              &kp L                &kp C            &kp P            &kp C_VOLUME_UP
 &bt BT_SEL 2  &hm LEFT_GUI A  &hm LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &key_repeat  &bl BL_DEC   &kp LEFT_CONTROL  &kp LEFT_ALT      &kp RIGHT_ALT  &kp ESCAPE  &bl BL_INC   &kp F   &hm RIGHT_SHIFT S  &hm RIGHT_CONTROL R  &hm LEFT_ALT D   &hm RIGHT_GUI N  &kp K_MUTE
 &bt BT_SEL 3  &kp Q           &hm RIGHT_ALT J  &kp K               &kp U             &kp GRAVE                                   &kp LEFT_GUI      &kp RMETA                               &kp V   &kp G              &kp M                &hm RIGHT_ALT B  &kp UP_ARROW     &kp C_VOLUME_DOWN
-&bt BT_CLR    &tog 1          &tog 2           &tog 3              &tog 7                         &tl 5 X      &tl 4 SPACE       &tl 6 Z           &tl 6 RETURN   &tl 4 T     &tl 5 H              &none              &none                &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
+&bt BT_CLR    &tog 1          &tog 2           &tog 3              &tog 7                         &tl 5 X      &tl 4 SPACE       &tl 6 Z           &tl 6 RETURN   &tl 4 T     &tl 5 H              &kp LC(V)          &kp LC(X)            &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
             >;
         };
 
@@ -451,33 +486,33 @@
             >;
         };
 
-        num_layer {
+        nav+num_layer {
             bindings = <
-&trans  &trans        &trans    &trans                 &trans     &trans        &trans                                                     &trans    &trans        &trans   &trans  &trans    &trans       &trans
-&trans  &kp HOME      &kp PG_DN &kp PG_UP              &kp END    &bt BT_SEL 0  &trans                                                     &trans    &bt BT_SEL 2  &kp N7   &kp N8  &kp N9    &kp LS(TAB)  &trans
-&trans  &kp LEFT      &kp DOWN  &kp UP                 &kp RIGHT  &bt BT_SEL 1  &trans         &trans     &trans          &trans   &trans  &trans    &bt BT_SEL 3  &kp N4   &kp N5  &kp N6    &kp TAB      &kp LS(TAB)
-&trans  &kp HOME      &kp LEFT  &kp DOWN               &kp RIGHT  &bt BT_CLR                              &trans          &trans                     &bt BT_CLR    &kp N1   &kp N2  &kp N3    &kp UP       &trans
-&trans  &none         &none     &none                  &none                    &kp BACKSPACE  &kp SPACE  &kp DELETE      &kp DOT  &kp N0  &double0                &kp DOT  &kp N0  &kp LEFT  &kp DOWN     &kp RIGHT
+&none  &none     &none      &none      &none      &none         &none                                                      &none     &none         &none    &none   &none     &none      &none
+&none  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &bt BT_SEL 0  &none                                                      &none     &bt BT_SEL 2  &kp N7   &kp N8  &kp N9    &kp PLUS   &none
+&none  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &bt BT_SEL 1  &none          &none      &none           &none    &none   &none     &bt BT_SEL 3  &kp N4   &kp N5  &kp N6    &kp EQUAL  &kp LS(TAB)
+&none  &kp HOME  &kp LEFT   &kp DOWN   &kp RIGHT  &bt BT_CLR                              &none           &none                      &bt BT_CLR    &kp N1   &kp N2  &kp N3    &kp UP     &none
+&none  &none     &none      &none      &none                    &kp BACKSPACE  &kp SPACE  &kp DELETE      &kp DOT  &kp N0  &double0                &kp DOT  &kp N0  &kp LEFT  &kp DOWN   &kp RIGHT
             >;
         };
 
-        nav_layer {
+        fn+nav_layer {
             bindings = <
-&trans  &trans    &trans     &trans     &trans     &trans             &trans                                                                  &trans            &trans      &trans    &trans     &trans     &trans     &trans
-&trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp C_VOLUME_UP    &trans                                                                  &trans            &bl BL_INC  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &trans
-&trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp K_MUTE         &trans         &trans     &trans          &trans        &trans          &trans            &bl BL_TOG  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &kp END
-&trans  &kp HOME  &kp LEFT   &kp DOWN   &kp RIGHT  &kp C_VOLUME_DOWN                            &trans          &trans                                          &bl BL_DEC  &kp LEFT  &kp DOWN   &kp RIGHT  &trans     &trans
-&trans  &none     &none      &none      &none                         &kp BACKSPACE  &kp SPACE  &kp DELETE      &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LEFT_CONTROL              &trans    &trans     &trans     &trans     &trans
+&none  &none      &none           &none       &none         &none         &none                                                                   &none             &none         &none     &none      &none      &none      &none
+&none  &kp LC(X)  &kp C_BRI_INC   &bl BL_INC  &kp C_VOL_UP  &bt BT_CLR    &none                                                                   &none             &bt BT_CLR    &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none
+&none  &kp LC(C)  &kp C_BRI_AUTO  &bl BL_TOG  &kp K_MUTE    &bt BT_SEL 0  &none          &none      &none           &none         &none           &none             &bt BT_SEL 2  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &kp END
+&none  &kp LC(V)  &kp C_BRI_DEC   &bl BL_DEC  &kp C_VOL_DN  &bt BT_SEL 1                            &none           &none                                           &bt BT_SEL 3  &kp LEFT  &kp DOWN   &kp RIGHT  &none      &none
+&none  &none      &none           &none       &none                       &kp BACKSPACE  &kp SPACE  &kp DELETE      &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LEFT_CONTROL                &none     &none      &none      &none      &none
             >;
         };
 
         fn_layer {
             bindings = <
-&trans  &trans            &trans            &trans                &trans              &trans     &trans                                      &trans  &trans         &trans               &trans                 &trans            &trans             &trans
-&trans  &kp F1            &kp F2            &kp F3                &kp F4              &kp F5     &trans                                      &trans  &kp F6         &kp F7               &kp F8                 &kp F9            &kp F10            &trans
-&trans  &hm LEFT_GUI F11  &hm LEFT_ALT F12  &hm LEFT_CONTROL F13  &hm LEFT_SHIFT F14  &kp F15    &trans  &trans  &trans      &trans  &trans  &trans  &kp F16        &hm RIGHT_SHIFT F17  &hm RIGHT_CONTROL F18  &hm LEFT_ALT F19  &hm RIGHT_GUI F20  &kp F10
-&trans  &kp F21           &kp F22           &kp F23               &kp F24             &kp TILDE                  &trans      &trans                  &kp LS(LC(Z))  &kp LC(V)            &kp LC(C)              &kp LC(X)         &kp LC(Z)          &trans
-&trans  &none             &none             &none                 &none                          &trans  &trans  &trans      &trans  &trans  &trans                 &trans               &trans                 &trans            &trans             &trans
+&none  &none             &none             &none                 &none               &none      &none                                  &none  &none          &none                &none                  &none             &none              &none
+&none  &kp F1            &kp F2            &kp F3                &kp F4              &kp F5     &none                                  &none  &kp F6         &kp F7               &kp F8                 &kp F9            &kp F10            &none
+&none  &hm LEFT_GUI F11  &hm LEFT_ALT F12  &hm LEFT_CONTROL F13  &hm LEFT_SHIFT F14  &kp F15    &none  &none  &none      &none  &none  &none  &kp F16        &hm RIGHT_SHIFT F17  &hm RIGHT_CONTROL F18  &hm LEFT_ALT F19  &hm RIGHT_GUI F20  &kp F10
+&none  &kp F21           &kp F22           &kp F23               &kp F24             &kp TILDE                &none      &none                &kp LS(LC(Z))  &kp LC(V)            &kp LC(C)              &kp LC(X)         &kp LC(Z)          &none
+&none  &none             &none             &none                 &none                          &none  &none  &none      &none  &none  &none                 &none                &none                  &none             &none              &none
             >;
         };
 
