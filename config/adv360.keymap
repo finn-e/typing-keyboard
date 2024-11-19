@@ -448,11 +448,11 @@
 
         anders_base_layer {
             bindings = <
-&bt BT_SEL 0  &kp N1          &kp N2           &kp N3              &kp N4            &kp N5       &bootloader                                                                 &bootloader  &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &sl 6
-&bt BT_SEL 1  &caps_word      &kp BACKSPACE    &kp RET             &kp DELETE        &kp TAB      &sys_reset                                                                  &sys_reset   &kp W   &kp Y              &kp L                &kp C            &kp P            &kp C_VOLUME_UP
-&bt BT_SEL 2  &hm LEFT_GUI A  &hm LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &key_repeat  &bl BL_DEC   &kp LEFT_CONTROL  &kp LEFT_ALT      &kp RIGHT_ALT  &kp ESCAPE  &bl BL_INC   &kp F   &hm RIGHT_SHIFT S  &hm RIGHT_CONTROL R  &hm LEFT_ALT D   &hm RIGHT_GUI N  &kp K_MUTE
-&bt BT_SEL 3  &kp Q           &hm RIGHT_ALT J  &kp K               &kp U             &kp GRAVE                                   &kp LEFT_GUI      &kp RMETA                               &kp V   &kp G              &kp M                &hm RIGHT_ALT B  &kp UP_ARROW     &kp C_VOLUME_DOWN
-&bt BT_CLR    &tog 1          &tog 2           &tog 3              &tog 7                         &tl 5 X      &tl 4 SPACE       &tl 6 Z           &tl 6 RETURN   &tl 4 T     &tl 5 H              &kp LC(V)          &kp LC(X)            &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
+&bt BT_SEL 0  &kp N1          &kp N2           &kp N3              &kp N4            &kp NUMBER_5  &bootloader                                                                 &bootloader  &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &sl 6
+&bt BT_SEL 1  &caps_word      &kp BACKSPACE    &kp RET             &kp DELETE        &kp TAB       &sys_reset                                                                  &sys_reset   &kp W   &kp Y              &kp L                &kp C            &kp P            &kp C_VOLUME_UP
+&bt BT_SEL 2  &hm LEFT_GUI A  &hm LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &key_repeat   &bl BL_DEC   &kp LEFT_CONTROL  &kp LEFT_ALT      &kp RIGHT_ALT  &kp ESCAPE  &bl BL_INC   &kp F   &hm RIGHT_SHIFT S  &hm RIGHT_CONTROL R  &hm LEFT_ALT D   &hm RIGHT_GUI N  &kp K_MUTE
+&bt BT_SEL 3  &kp Q           &hm RIGHT_ALT J  &kp K               &kp U             &kp GRAVE                                    &kp LEFT_GUI      &kp RMETA                               &kp V   &kp G              &kp M                &hm RIGHT_ALT B  &kp UP_ARROW     &kp C_VOLUME_DOWN
+&bt BT_CLR    &tog 1          &tog 2           &tog 3              &tog 7                          &tl 5 X      &tl 4 SPACE       &tl 6 Z           &tl 6 RETURN   &tl 4 T     &tl 5 H              &kp LC(V)          &kp LC(X)            &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
             >;
         };
 
