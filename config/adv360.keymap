@@ -409,24 +409,19 @@
             key-positions = <44 43 42>;
         };
 
-        br_amp {
-            bindings = <&kp AMPERSAND>;
-            key-positions = <58 56>;
-        };
-
         br_pipe {
             bindings = <&kp PIPE>;
-            key-positions = <58 57>;
+            key-positions = <58 54>;
         };
 
         br_equal {
             bindings = <&kp EQUAL>;
-            key-positions = <58 56>;
+            key-positions = <58 55>;
         };
 
         br_plus {
             bindings = <&kp PLUS>;
-            key-positions = <58 54>;
+            key-positions = <58 56>;
         };
     };
 
