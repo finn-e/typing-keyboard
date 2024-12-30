@@ -230,7 +230,7 @@
 
         hr-dash {
             timeout-ms = <40>;
-            bindings = <&kt MINUS>;
+            bindings = <&kt KP_MINUS>;
             key-positions = <42 43>;
         };
 
@@ -386,27 +386,17 @@
 
         bl_cut {
             bindings = <&kp LC(X)>;
-            key-positions = <47 48>;
+            key-positions = <48 29>;
         };
 
         bl_copy {
             bindings = <&kp LC(C)>;
-            key-positions = <48 49>;
+            key-positions = <29 49>;
         };
 
         bl_paste {
             bindings = <&kp LC(V)>;
-            key-positions = <49 50>;
-        };
-
-        tl_equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <18 17>;
-        };
-
-        tl_plus {
-            bindings = <&kp PLUS>;
-            key-positions = <17 16>;
+            key-positions = <29 50>;
         };
 
         hl_escape {
@@ -417,6 +407,26 @@
         hr_escape {
             bindings = <&kp ESCAPE>;
             key-positions = <44 43 42>;
+        };
+
+        br_amp {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <58 56>;
+        };
+
+        br_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <58 57>;
+        };
+
+        br_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <58 56>;
+        };
+
+        br_plus {
+            bindings = <&kp PLUS>;
+            key-positions = <58 54>;
         };
     };
 
