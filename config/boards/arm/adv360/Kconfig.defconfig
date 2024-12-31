@@ -35,6 +35,9 @@ config SPI
 config BT_CTLR
     default BT
 
+config CONFIG_ZMK_COMBO_MAX_COMBOS_PER_KEY
+    default 9
+
 if USB
 
 config USB_NRFX
