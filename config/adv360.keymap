@@ -458,11 +458,11 @@
 
         anders_base {
             bindings = <
-&bt BT_SEL 0  &kp N1          &kp N2           &kp N3              &kp N4            &kp NUMBER_5  &bootloader                                                                        &bootloader         &kp N6     &kp N7             &kp N8               &kp N9           &kp N0           &kp K_MUTE
-&bt BT_SEL 1  &none           &kp P            &kp TAB             &kp Y             &kp DELETE    &sys_reset                                                                         &sys_reset          &kp GRAVE  &kp M              &kp L                &kp C            &kp Z            &kp C_VOLUME_UP
-&bt BT_SEL 2  &hm LEFT_GUI A  &hm LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &key_repeat   &kp LA(LC(DELETE))  &kp LEFT_CONTROL  &kp LEFT_ALT      &kp RIGHT_ALT  &kp ESCAPE  &kp LC(LA(DELETE))  &kp F      &hm RIGHT_SHIFT S  &hm RIGHT_CONTROL R  &hm LEFT_ALT D   &hm RIGHT_GUI N  &kp C_VOL_DN
-&bt BT_SEL 3  &kp Q           &hm RIGHT_ALT J  &kp K               &kp U             &kp GRAVE                                           &kp LEFT_GUI      &kp RMETA                                      &kp GRAVE  &kp G              &kp W                &hm RIGHT_ALT B  &kp UP_ARROW     &bl BL_CYCLE
-&bt BT_CLR    &tog 1          &none            &none               &tog 5                          &tl 3 V             &tl 2 SPACE       &tl 4 X           &tl 4 GRAVE    &tl 2 T     &tl 3 H                        &none              &none                &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
+&bt BT_SEL 0  &kp N1          &kp N2           &kp N3              &kp N4            &kp NUMBER_5  &bootloader                                                                        &bootloader         &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &kp K_MUTE
+&bt BT_SEL 1  &none           &kp Y            &kp TAB             &kp DELETE        &bt BT_NXT    &sys_reset                                                                         &sys_reset          &kp W   &kp G              &kp L                &kp P            &kp Z            &kp C_VOLUME_UP
+&bt BT_SEL 2  &hm LEFT_GUI A  &hm LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &bt BT_PRV    &kp LA(LC(DELETE))  &kp LEFT_CONTROL  &kp LEFT_ALT      &kp RIGHT_ALT  &kp ESCAPE  &kp LC(LA(DELETE))  &kp F   &hm RIGHT_SHIFT S  &hm RIGHT_CONTROL R  &hm LEFT_ALT D   &hm RIGHT_GUI N  &kp C_VOL_DN
+&bt BT_SEL 3  &kp Q           &hm RIGHT_ALT J  &kp K               &kp U             &bt BT_CLR                                          &kp LEFT_GUI      &kp RMETA                                      &kp W   &kp C              &kp M                &hm RIGHT_ALT B  &kp UP_ARROW     &bl BL_CYCLE
+&bt BT_CLR    &tog 1          &none            &none               &tog 5                          &tl 3 V             &tl 2 SPACE       &tl 4 X           &tl 4 TAB      &tl 2 T     &tl 3 H                     &none              &none                &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
             >;
         };
 
