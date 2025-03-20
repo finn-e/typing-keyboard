@@ -450,18 +450,35 @@
             bindings = <&kp LS(T) &kp H>;
             label = "TH";
         };
+
+        email: email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp F &kp L &kp A &kp H &kp N3 &kp R &kp T &kp Y &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "EMAIL";
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        anders_base {
+        resend {
+            bindings = <
+&bt BT_SEL 0  &kp N1          &kp N2           &kp N3              &kp N4            &kp NUMBER_5   &bootloader                                                                 &bootloader         &kp N6      &kp N7             &kp N8               &kp N9           &kp N0           &kp C_VOL_UP
+&bt BT_SEL 1  &kp Q           &kp Y            &kp G               &kp W             &kp BACKSPACE  &sys_reset                                                                  &sys_reset          &kp DELETE  &kp F              &kp L                &kp P            &kp Z            &kp C_VOL_DN
+&bt BT_SEL 2  &hm LEFT_GUI A  &hm LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &kp RET        &bt BT_CLR   &kp LEFT_CONTROL  &kp LEFT_ALT      &kp RIGHT_ALT  &kp ESCAPE  &kp LC(LA(DELETE))  &kp TAB     &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &kp K_MUTE
+&bt BT_SEL 3  &bt BT_PRV      &hm RIGHT_ALT J  &kp K               &kp U             &bt BT_NXT                                    &kp LEFT_GUI      &kp RMETA                                      &kp ESCAPE  &kp C              &kp M                &hm RIGHT_ALT B  &kp UP_ARROW     &bl BL_CYCLE
+&bt BT_CLR    &tog 2          &none            &none               &tog 6                           &tl 4 V      &tl 3 SPACE       &tl 5 X           &tl 5 TAB      &tl 3 T     &tl 4 H                         &none              &none                &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
+            >;
+        };
+
+        anders {
             bindings = <
 &bt BT_SEL 0  &kp N1          &kp N2           &kp N3              &kp N4            &kp NUMBER_5  &bootloader                                                                        &bootloader         &kp N6  &kp N7             &kp N8               &kp N9           &kp N0           &kp C_VOL_UP
 &bt BT_SEL 1  &none           &kp Y            &kp TAB             &kp DELETE        &bt BT_NXT    &sys_reset                                                                         &sys_reset          &kp W   &kp G              &kp L                &kp P            &kp Z            &kp C_VOL_DN
 &bt BT_SEL 2  &hm LEFT_GUI A  &hm LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &bt BT_PRV    &kp LA(LC(DELETE))  &kp LEFT_CONTROL  &kp LEFT_ALT      &kp RIGHT_ALT  &kp ESCAPE  &kp LC(LA(DELETE))  &kp F   &hm RIGHT_SHIFT S  &hm RIGHT_CONTROL R  &hm LEFT_ALT D   &hm RIGHT_GUI N  &kp Z
 &bt BT_SEL 3  &kp Q           &hm RIGHT_ALT J  &kp K               &kp U             &bt BT_CLR                                          &kp LEFT_GUI      &kp RMETA                                      &kp W   &kp C              &kp M                &hm RIGHT_ALT B  &kp UP_ARROW     &bl BL_CYCLE
-&bt BT_CLR    &tog 1          &none            &none               &tog 5                          &tl 3 V             &tl 2 SPACE       &tl 4 X           &tl 4 TAB      &tl 2 T     &tl 3 H                     &none              &none                &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
+&bt BT_CLR    &tog 2          &none            &none               &tog 6                          &tl 4 V             &tl 3 SPACE       &tl 5 X           &tl 5 TAB      &tl 3 T     &tl 4 H                     &none              &none                &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
             >;
         };
 
@@ -511,7 +528,7 @@
 &none  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans  &trans  &none
 &none  &trans  &trans  &trans  &trans  &trans  &none   &none   &none       &none   &none   &none   &trans  &trans  &trans  &trans  &trans  &trans
 &none  &trans  &trans  &trans  &trans  &trans                  &none       &none                   &trans  &trans  &trans  &trans  &none   &none
-&none  &none   &none   &none   &tog 5          &trans  &trans  &trans      &trans  &trans  &trans          &none   &none   &none   &none   &none
+&none  &none   &none   &none   &tog 6          &trans  &trans  &trans      &trans  &trans  &trans          &none   &none   &none   &none   &none
             >;
         };
     };
