@@ -465,10 +465,10 @@
         resend {
             bindings = <
 &bt BT_SEL 0  &kp N1          &kp N2           &kp N3              &kp N4            &kp NUMBER_5   &bootloader                                                                 &bootloader         &kp N6      &kp N7             &kp N8               &kp N9           &kp N0           &kp C_VOL_UP
-&bt BT_SEL 1  &kp Q           &kp Y            &kp G               &kp W             &kp BACKSPACE  &sys_reset                                                                  &sys_reset          &kp DELETE  &kp F              &kp L                &kp P            &kp Z            &kp C_VOL_DN
+&bt BT_SEL 1  &kp Q           &kp Y            &kp G               &kp W             &kp BACKSPACE  &sys_reset                                                                  &sys_reset          &kp DELETE  &kp P              &kp L                &kp F            &kp Z            &kp C_VOL_DN
 &bt BT_SEL 2  &hm LEFT_GUI A  &hm LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &kp RET        &bt BT_CLR   &kp LEFT_CONTROL  &kp LEFT_ALT      &kp RIGHT_ALT  &kp ESCAPE  &kp LC(LA(DELETE))  &kp TAB     &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &kp K_MUTE
 &bt BT_SEL 3  &bt BT_PRV      &hm RIGHT_ALT J  &kp K               &kp U             &bt BT_NXT                                    &kp LEFT_GUI      &kp RMETA                                      &kp ESCAPE  &kp C              &kp M                &hm RIGHT_ALT B  &kp UP_ARROW     &bl BL_CYCLE
-&bt BT_CLR    &tog 2          &none            &none               &tog 6                           &tl 4 V      &tl 3 SPACE       &tl 5 X           &tl 5 TAB      &tl 3 T     &tl 4 H                         &none              &none                &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
+&bt BT_SEL 4  &tog 2          &none            &none               &tog 6                           &tl 4 V      &tl 3 SPACE       &tl 5 X           &tl 5 TAB      &tl 3 T     &tl 4 H                         &none              &none                &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW
             >;
         };
 
@@ -486,7 +486,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                            &trans   &trans  &trans  &trans     &trans   &trans    &trans
 &trans  &kp Q   &kp W   &kp E   &kp R   &kp T   &trans                                                            &trans   &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
-&trans  &kp A   &kp S   &kp D   &kp F   &kp G   &trans         &trans     &trans          &trans   &trans         &trans   &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp P
+&trans  &kp A   &kp S   &kp D   &kp F   &kp G   &trans         &trans     &trans          &trans   &trans         &trans   &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
 &trans  &kp Z   &kp X   &kp C   &kp V   &kp B                             &trans          &trans                           &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
 &trans  &trans  &trans  &trans  &trans          &kp BACKSPACE  &kp SPACE  &kp DELETE      &kp RET  &kp BACKSPACE  &kp TAB          &trans  &trans     &trans   &trans    &trans
             >;
