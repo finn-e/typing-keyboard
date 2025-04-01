@@ -504,11 +504,11 @@
 
         navigation {
             bindings = <
-&none  &none       &none      &none      &none      &none         &none                                                                   &none             &none         &none     &none      &none      &none      &none
-&none  &kp HOME    &kp PG_DN  &kp PG_UP  &kp END    &bt BT_CLR    &none                                                                   &none             &bt BT_CLR    &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none
-&none  &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT  &bt BT_SEL 0  &none          &none      &none           &none         &none           &none             &bt BT_SEL 2  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &kp END
-&none  &kp K_MUTE  &kp LEFT   &kp DOWN   &kp RIGHT  &bt BT_SEL 1                            &none           &none                                           &bt BT_SEL 3  &kp LEFT  &kp DOWN   &kp RIGHT  &none      &none
-&none  &none       &none      &none      &none                    &kp BACKSPACE  &kp SPACE  &kp DELETE      &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LEFT_CONTROL                &none     &none      &none      &none      &none
+&none  &none     &none      &none      &none      &none         &none                                                                   &none             &none         &none     &none      &none      &none      &none
+&none  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &bt BT_CLR    &none                                                                   &none             &bt BT_CLR    &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none
+&none  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &bt BT_SEL 0  &none          &none      &none           &none         &none           &none             &bt BT_SEL 2  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &kp END
+&none  &none     &kp LEFT   &kp DOWN   &kp RIGHT  &bt BT_SEL 1                            &none           &none                                           &bt BT_SEL 3  &kp LEFT  &kp DOWN   &kp RIGHT  &none      &none
+&none  &none     &none      &none      &none                    &kp BACKSPACE  &kp SPACE  &kp DELETE      &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LEFT_CONTROL                &none     &none      &none      &none      &none
             >;
         };
 
