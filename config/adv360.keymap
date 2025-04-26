@@ -491,8 +491,8 @@
         anders {
             bindings = <
 &none  &none        &none       &none        &none        &none  &none                                                       &none    &none  &none        &none        &none       &none        &none
-&none  &tl 6 F      &hm RALT Y  &tl 7 G      &tl 8 U      &none  &none                                                       &none    &none  &tl 8 M      &tl 7 L      &hm RALT C  &tl 6 P      &none
-&none  &hm LMETA A  &hm LALT I  &hm LCTRL O  &hm LSHFT E  &none  &none               &none        &none      &none  &none    &none    &none  &hm RSHFT S  &hm RCTRL R  &hm LALT D  &hm RMETA N  &none
+&none  &tl 6 F      &hm RALT I  &tl 7 O      &tl 8 U      &none  &none                                                       &none    &none  &tl 8 L      &tl 7 D      &hm RALT N  &tl 6 M      &none
+&none  &hm LMETA A  &hm LALT Y  &hm LCTRL G  &hm LSHFT E  &none  &none               &none        &none      &none  &none    &none    &none  &hm RSHFT R  &hm RCTRL C  &hm LALT P  &hm RMETA S  &none
 &none  &none        &none       &none        &none        &none                                   &none      &none                    &none  &none        &none        &none       &none        &none
 &none  &none        &none       &none        &none               &layer_tab_rpt 2 0  &tl 1 SPACE  &none      &none  &tl 1 T  &tl 2 H         &none        &none        &none       &none        &none
             >;
